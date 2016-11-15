@@ -1,0 +1,140 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+h4{
+	font: bold 10px Tahoma;
+}
+
+/* unvisited link */
+ul a:link {
+    color: white;
+}
+
+/* visited link */
+ul a:visited {
+    color: white;
+}
+
+/* mouse over link */
+ul a:hover {
+    color: cyan;
+}
+
+/* selected link */
+ul a:active {
+    color: cyan;
+}
+
+/* unvisited link */
+hgroup a:link {
+    color: black;
+}
+
+/* visited link */
+hgroup a:visited {
+    color: black;
+}
+
+/* mouse over link */
+hgroup a:hover {
+    color: grey;
+}
+
+/* selected link */
+hgroup a:active {
+    color: grey;
+}
+#box {
+	display: block;
+	width: 200px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid blue;
+	background: cyan;
+}
+#box a{
+	font: bold 14px Tahoma;
+}
+#box a:link {
+    color: white;
+}
+
+/* visited link */
+#box a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#box a:hover {
+    color: blue;
+}
+
+/* selected link */
+#box a:active {
+    color: blue;
+}
+header,section,footer,aside,nav,article,hgroup{
+	display: block;
+}
+body{
+	text-align: center;
+}
+#main_wrapper{
+	border: 1px solid black;
+	max-width: 1000px;
+	margin: 20px auto;
+	text-align: left;
+}
+#top_header{
+	background: cyan;
+	border: 1px solid blue;
+	padding: 20px;
+}
+#second_header{
+	padding: 20px;
+}
+#top_menu{
+	background: blue;
+	color: white;
+}
+#top_menu li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+}
+#main_section{
+	float: left;
+	width: 50%;
+	margin: 30px;
+}
+#side_info{
+	float: left;
+	width: 30%;
+	margin: 20px 0px;
+	padding: 30px;
+	background: #66CCCC;
+}
+#bottom_footer{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid green
+}
+article{
+	background: #FFFBCC;
+	border: 1px solid red;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+article footer{
+	text-align: right;
+}
