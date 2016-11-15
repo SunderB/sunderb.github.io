@@ -13,43 +13,42 @@ h4{
 }
 
 /* unvisited link */
-ul a:link {
-    color: white;
+a:link {
+    color: black;
 }
-
 /* visited link */
-ul a:visited {
-    color: white;
+a:visited {
+    color: black;
 }
 
 /* mouse over link */
-ul a:hover {
-    color: cyan;
+a:hover {
+    color: grey;
 }
 
 /* selected link */
-ul a:active {
-    color: cyan;
+a:active {
+    color: grey;
 }
 
 /* unvisited link */
-hgroup a:link {
-    color: black;
+#top_menu ul a:link {
+    color: white;
 }
 
 /* visited link */
-hgroup a:visited {
-    color: black;
+#top_menu ul a:visited {
+    color: white;
 }
 
 /* mouse over link */
-hgroup a:hover {
-    color: grey;
+#top_menu ul a:hover {
+    color: cyan;
 }
 
 /* selected link */
-hgroup a:active {
-    color: grey;
+#top_menu ul a:active {
+    color: cyan;
 }
 #box {
 	display: block;
