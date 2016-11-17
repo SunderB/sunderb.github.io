@@ -111,6 +111,12 @@ body{
 	padding: 5px;
 	font: bold 14px Tahoma;
 }
+#top_bar {
+	position:fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+}
 #main_section{
 	float: left;
 	width: 50%;
