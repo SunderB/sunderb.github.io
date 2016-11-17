@@ -31,7 +31,7 @@ a:active {
     color: grey;
 }
 
-#top_menu ul a{
+#top_menu ul li a{
 	display: block;
 }
 
