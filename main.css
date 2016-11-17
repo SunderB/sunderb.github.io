@@ -31,6 +31,10 @@ a:active {
     color: grey;
 }
 
+#top_menu ul a{
+	display: block;
+}
+
 /* unvisited link */
 #top_menu ul a:link {
     color: white;
