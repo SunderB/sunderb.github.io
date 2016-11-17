@@ -104,6 +104,7 @@ body{
 #top_menu{
 	background: blue;
 	color: white;
+	padding: 5px;
 }
 #top_menu li{
 	display: inline-block;
