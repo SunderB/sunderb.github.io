@@ -108,6 +108,7 @@ body{
     	top: 0;
     	left: 0;
     	width: 100%;
+	padding: 20px;
 }
 #top_menu li{
 	display: inline-block;
