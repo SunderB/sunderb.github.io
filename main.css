@@ -90,7 +90,7 @@ header,section,footer,aside,nav,article,hgroup{
 body{
 	text-align: center;
 	padding-top: 100px;
-	background-color: rgb(238, 238, 238);
+	background-color: rgb(255, 255, 255);
 }
 #new-div{
 	border: 1px solid black;
