@@ -30,7 +30,9 @@ a:hover {
 a:active {
     color: grey;
 }
-
+#top_menu ul li	{
+	font: bold 14px Tahoma;
+}
 #top_menu ul li a{
 	display: block;
   	color: white;
@@ -117,27 +119,6 @@ body{
 }
 #second_header{
 	padding: 20px;
-}
-#top_menu{
-	background: blue;
-	color: white;
-	padding: 5px;
-}
-#top_menu li{
-	display: inline-block;
-	list-style: none;
-	padding: 5px;
-	font: bold 14px Tahoma;
-}
-#top_menu ul{
-	list-style-type: none;
-	margin: 0;
-    	padding: 0;
- 	overflow: hidden;
-  	background-color: #333;
-  	position: fixed;
-  	top: 0;
-  	width: 100%;
 }
 #top_bar {
 	position:fixed;
