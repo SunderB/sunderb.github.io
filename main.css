@@ -33,27 +33,38 @@ a:active {
 
 #top_menu ul li a{
 	display: block;
+  	color: white;
+	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+#top_menu ul li a:hover:not(.active) {
+    background-color: #111;
 }
 
-/* unvisited link */
+#top_menu ul li a.active {
+    background-color: rgb(51, 204, 255);
+}
+/* unvisited link
 #top_menu ul a:link {
     color: white;
 }
-
-/* visited link */
+*/
+/* visited link
 #top_menu ul a:visited {
     color: white;
 }
-
-/* mouse over link */
+*/
+/* mouse over link
 #top_menu ul a:hover {
     color: cyan;
 }
-
-/* selected link */
+*/
+/* selected link 
 #top_menu ul a:active {
     color: cyan;
 }
+*/
 #box {
 	display: block;
 	width: 200px;
@@ -117,6 +128,16 @@ body{
 	list-style: none;
 	padding: 5px;
 	font: bold 14px Tahoma;
+}
+#top_menu ul{
+	list-style-type: none;
+	margin: 0;
+    	padding: 0;
+ 	overflow: hidden;
+  	background-color: #333;
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
 }
 #top_bar {
 	position:fixed;
