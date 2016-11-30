@@ -30,6 +30,11 @@ a:hover {
 a:active {
     color: grey;
 }
+#top_menu {
+    float:right;
+    left:-50%;
+    /*text-align:left;*/
+}
 #top_menu ul {
     list-style-type: none;
     margin: 0;
@@ -39,6 +44,7 @@ a:active {
     position: fixed;
     top: 0;
     width: 100%;
+    left:50%;
 }
 #top_menu ul li	{
 	font: bold 14px Tahoma;
