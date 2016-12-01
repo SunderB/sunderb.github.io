@@ -59,7 +59,7 @@ a:active {
     background-color: #111;
 }
 
-#top_menu ul li a.active {
+.currentLink{
     background-color: rgb(51, 204, 255);
 }
 /* unvisited link
