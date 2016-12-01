@@ -45,7 +45,9 @@ a:active {
     width: 100%;
 }
 #top_menu ul li	{
+	display: inline;
 	font: bold 14px Tahoma;
+	text-align: center;
 }
 #top_menu ul li a{
 	display: block;
