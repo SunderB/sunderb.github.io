@@ -46,7 +46,6 @@ a:active {
 }
 #top_menu ul li	{
 	font: bold 14px Tahoma;
-	float: left;
 }
 #top_menu ul li a{
 	display: block;
