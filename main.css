@@ -31,9 +31,7 @@ a:active {
     color: grey;
 }
 #top_menu {
-    float:right;
-    left:-50%;
-    /*text-align:left;*/
+	text-align: center;
 }
 #top_menu ul {
     list-style-type: none;
@@ -44,7 +42,6 @@ a:active {
     position: fixed;
     top: 0;
     width: 100%;
-    left:50%;
 }
 #top_menu ul li	{
 	font: bold 14px Tahoma;
