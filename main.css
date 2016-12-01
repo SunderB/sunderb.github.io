@@ -45,13 +45,12 @@ a:active {
     width: 100%;
 }
 #top_menu ul li	{
-	display: inline;
-	font: bold 14px Tahoma;
-	text-align: center;
+	display: inline-block;
 }
 #top_menu ul li a{
 	display: block;
   	color: white;
+	font: bold 14px Tahoma;
 	text-align: center;
   	padding: 14px 16px;
   	text-decoration: none;
