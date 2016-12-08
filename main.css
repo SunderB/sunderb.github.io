@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway:700')
 *{
 	margin: 0px;
 	padding: 0px;
 }
 h1{
-	font: bold 20px Raleway;
+	font: bold 20px Tahoma;
 }
 h2{
 	font: bold 14px Tahoma;
@@ -51,7 +50,7 @@ a:active {
 #top_menu ul li a{
 	display: block;
   	color: white;
-	font: bold 14px Raleway;
+	font: bold 14px Tahoma;
 	text-align: center;
   	padding: 14px 16px;
   	text-decoration: none;
