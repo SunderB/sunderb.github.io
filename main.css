@@ -7,21 +7,20 @@ h1{
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 }
-/*
-h1{
-	font: bold 20px Tahoma;
+h2,h3,h4,p,a{
+	font-family: 'Open Sans Condensed', sans-serif;
 }
-*/
 h2{
 	/* font: bold 14px Tahoma; */
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
 	font-weight:700;
 }
 h4{
-	font: bold 10px Tahoma;
+	/* font: bold 10px Tahoma; */
+	font-size: 10px;
+	font-weight:700;
 }
 p{
-	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight:500;
 }
 
