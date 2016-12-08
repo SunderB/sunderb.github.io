@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500,700|Raleway:700');
 *{
 	margin: 0px;
 	padding: 0px;
@@ -13,10 +13,16 @@ h1{
 }
 */
 h2{
-	font: bold 14px Tahoma;
+	/* font: bold 14px Tahoma; */
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:700;
 }
 h4{
 	font: bold 10px Tahoma;
+}
+p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:500;
 }
 
 /* unvisited link */
