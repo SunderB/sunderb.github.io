@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500,700|Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500,700|Raleway:700|Roboto');
 *{
 	margin: 0px;
 	padding: 0px;
@@ -8,17 +8,17 @@ h1{
 	font-size: 20px;
 }
 h2,h3,h4,p,a{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 h2{
 	/* font: bold 14px Tahoma; */
 	font-size: 18px;
-	font-weight:700;
+	/* font-weight:700; */
 }
 h4{
 	/* font: bold 10px Tahoma; */
 	font-size: 14px;
-	font-weight:700;
+	/* font-weight:700; */
 }
 p{
 	font-weight:500;
