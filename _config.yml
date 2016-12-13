@@ -1,2 +1,7 @@
+github: [metadata]
+kramdown:
+ input: GFM
+ hard_wrap: false
 gems:
-  - jekyll-redirect-from
+   - jekyll-coffeescript
+   - jekyll-paginate
