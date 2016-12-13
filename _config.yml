@@ -2,6 +2,7 @@ github: [metadata]
 kramdown:
  input: GFM
  hard_wrap: false
+permalink: /:title
 gems:
    - jekyll-coffeescript
    - jekyll-paginate
