@@ -155,7 +155,7 @@ body{
 }
 #main_section{
 	float: left;
-	width: 50%;
+	width: 55%;
 	margin: 20px;
 }
 #side_info{
@@ -183,7 +183,7 @@ article footer{
 
 @media screen and (max-width: 550px) {
 	#main_section{
-		width: 80%;
+		width: 85%;
 	}
 	#side_info{
 		display: none;
