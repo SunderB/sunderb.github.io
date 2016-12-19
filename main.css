@@ -133,7 +133,6 @@ body{
 	background-color: rgb(255, 255, 255);
 }
 #new-div{
-	border: 1px solid black;
 	max-width: 1000px;
 	margin: 20px auto;
 	text-align: left;
@@ -147,6 +146,7 @@ body{
 }
 #second_header{
 	padding: 20px;
+	border: 1px solid black;
 }
 #top_bar {
 	position:fixed;
