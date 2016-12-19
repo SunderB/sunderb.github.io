@@ -176,6 +176,9 @@ article footer{
 	padding: 30px;
 	background: #66CCCC;
 }
+#ver_list ul{
+	list-style-type: none;
+}
 #bottom_footer{
 	clear: both;
 	text-align: center;
