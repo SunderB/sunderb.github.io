@@ -182,6 +182,9 @@ article footer{
 }
 
 @media screen and (max-width: 550px) {
+	#main_section{
+		width: 80%;
+	}
 	#side_info{
 		display: none;
 		width: 0%;
