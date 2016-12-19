@@ -183,6 +183,13 @@ article footer{
 	border-top: 2px solid green
 }
 
+@media screen and (max-width: 1040px) {
+	#new_div{
+		margin: 20px;
+	}
+}
+
+
 @media screen and (max-width: 800px) {
 	#main_section{
 		width: 50%;
