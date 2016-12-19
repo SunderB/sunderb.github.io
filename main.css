@@ -158,8 +158,17 @@ body{
 	width: 55%;
 	margin: 20px;
 }
+article{
+	background: rgb(135, 255, 255);
+	border: 1px solid rgb(0, 153, 255);
+	padding: 20px;
+	margin-bottom: 15px;
+}
+article footer{
+	text-align: right;
+}
 #side_info{
-	float: left;
+	float: right;
 	width: 30%;
 	margin: 20px 0px;
 	padding: 30px;
@@ -170,15 +179,6 @@ body{
 	text-align: center;
 	padding: 20px;
 	border-top: 2px solid green
-}
-article{
-	background: rgb(135, 255, 255);
-	border: 1px solid rgb(0, 153, 255);
-	padding: 20px;
-	margin-bottom: 15px;
-}
-article footer{
-	text-align: right;
 }
 
 @media screen and (max-width: 800px) {
