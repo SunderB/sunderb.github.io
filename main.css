@@ -180,3 +180,12 @@ article{
 article footer{
 	text-align: right;
 }
+
+@media screen and (max-width: 550px) {
+	#side_info{
+		display: none;
+		width: 0%;
+		margin: 0px;
+		padding: 0px;
+	}
+}
