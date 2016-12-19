@@ -184,11 +184,10 @@ article footer{
 }
 
 @media screen and (max-width: 1040px) {
-	#new_div{
+	#new-div{
 		margin: 20px;
 	}
 }
-
 
 @media screen and (max-width: 800px) {
 	#main_section{
