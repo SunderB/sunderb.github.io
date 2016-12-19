@@ -181,6 +181,15 @@ article footer{
 	text-align: right;
 }
 
+@media screen and (max-width: 800px) {
+	#main_section{
+		width: 50%;
+	}
+	#side_info{
+		width: 30%;
+	}
+}
+
 @media screen and (max-width: 550px) {
 	#main_section{
 		width: 85%;
