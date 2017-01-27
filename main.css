@@ -163,12 +163,10 @@ body{
 article {
 	padding: 20px;
 	margin-bottom: 15px;
-}
-#plain_article{
 	background: rgb(255, 255, 255);
 	border-bottom: 1px solid rgb(100, 100, 100);
 }
-article :not(#plain_article) {
+#blue_article {
 	background: rgb(135, 255, 255);
 	border: 1px solid rgb(0, 153, 255);
 }
