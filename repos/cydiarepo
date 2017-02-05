@@ -1,0 +1,25 @@
+<!--
+SunderB's Website
+Unique Content (unless otherwise stated) is All Rights Reserved
+See LICENSE (https://github.com/SunderB/sunderb.github.io/blob/master/LICENSE)
+-->
+		
+<section id="main_section">
+	<article>
+		<header>
+			<hgroup>
+				<h1>SunderB's Cydia Repo</h1>
+				<h2>sunderb.github.io/cydiarepo</h2>
+			</hgroup>
+		</header>
+		<p>Has some stuff that I made.</p>
+		<footer>
+			<p></p>
+		</footer>
+	</article>
+</section>
+
+<aside id="side_info">
+	<h2>News</h2>
+	<p>It is 2017!<p>
+</aside>
