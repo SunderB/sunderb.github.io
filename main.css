@@ -63,7 +63,7 @@ a:active {
   	color: white;
 	font: bold 14px Tahoma;
 	text-align: center;
-  	padding: 14px 16px;
+  	padding: 20px 16px;
   	text-decoration: none;
 }
 #top_menu ul li a:hover:not(.active) {
@@ -145,7 +145,7 @@ body{
 #top_header{
 	background: cyan;
 	border: 1px solid blue;
-	padding: 14px 16px;
+	padding: 20px;
 }
 #second_header{
 	padding: 20px;
