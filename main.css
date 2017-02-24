@@ -73,6 +73,9 @@ a:active {
 #top_menu ul li a:currentLink{
     background-color: rgb(51, 204, 255);
 }
+#top_menu ul li a.active {
+    background-color: #000000;
+}
 /* unvisited link
 #top_menu ul a:link {
     color: white;
