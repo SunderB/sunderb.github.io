@@ -35,23 +35,25 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: grey;
+	color: grey;
 }
 
 /* selected link */
 a:active {
-    color: grey;
+	color: grey;
 }
 div.card {
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+	width: 40%;
+	margin: 5%;
+	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
 }
 div.header h1 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    font-size: 40px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	font-size: 40px;
 }
 div.container {
     padding: 10px;
@@ -60,14 +62,14 @@ div.container {
 	text-align: center;
 }
 #top_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 #top_menu ul li	{
 	display: inline-block;
@@ -82,14 +84,14 @@ div.container {
   	text-decoration: none;
 }
 #top_menu ul li a:hover:not(.active) {
-    background-color: #111;
+	background-color: #111;
 }
 
 #top_menu ul li a:currentLink{
-    background-color: rgb(51, 204, 255);
+	background-color: rgb(51, 204, 255);
 }
 #top_menu ul li a.active {
-    background-color: #000000;
+	background-color: #000000;
 }
 /* unvisited link
 #top_menu ul a:link {
@@ -124,22 +126,22 @@ div.container {
 	font: bold 14px Tahoma;
 }
 #box a:link {
-    color: white;
+	color: white;
 }
 
 /* visited link */
 #box a:visited {
-    color: white;
+	color: white;
 }
 
 /* mouse over link */
 #box a:hover {
-    color: blue;
+	color: blue;
 }
 
 /* selected link */
 #box a:active {
-    color: blue;
+	color: blue;
 }
 header,section,footer,aside,nav,article,hgroup{
 	display: block;
@@ -174,8 +176,8 @@ body{
 }
 #main_section{
 	float: left;
-	width: 55%;
-	margin: 20px 0px;
+	width: 60%;
+	margin: 2.5%;
 }
 article {
 	padding: 20px;
@@ -195,9 +197,9 @@ article footer{
 }
 #side_info{
 	float: right;
-	width: 30%;
-	margin: 20px 0px;
-	padding: 30px;
+	width: 20%;
+	margin: 2.5%;
+	padding: 5%;
 	background: #66CCCC;
 }
 #ver_list ul{
