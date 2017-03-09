@@ -60,13 +60,13 @@ div.container {
 }
 #top_menu {
 	text-align: center;
+	background-color: #00A2E8;
 }
 #top_menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -76,7 +76,7 @@ div.container {
 }
 #top_menu ul li a{
 	display: block;
-  	color: white;
+  	color: black;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	text-align: center;
@@ -160,8 +160,6 @@ body{
 	
 }
 #top_header{
-	background: cyan;
-	border: 1px solid blue;
 	padding: 20px;
 }
 #second_header{
