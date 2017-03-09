@@ -50,7 +50,7 @@ div.card {
 	text-align: center;
 }
 div.header h1 {
-	background-color: #4CAF50;
+	background-color: #00A2E8;
 	color: white;
 	padding: 10px;
 	font-size: 40px;
@@ -82,9 +82,10 @@ div.container {
 	text-align: center;
   	padding: 20px 16px;
   	text-decoration: none;
+	background-color: #00A2E8;
 }
 #top_menu ul li a:hover:not(.active) {
-	background-color: #111;
+	background-color: #00A2E8;
 }
 
 #top_menu ul li a:currentLink{
