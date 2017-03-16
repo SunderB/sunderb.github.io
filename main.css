@@ -86,7 +86,8 @@ div.container {
 	background-color: #00A2E8;
 }
 #top_menu ul li a:hover:not(.active) {
-	background-color: #00A2E8;
+	background-color: #333;
+	color: white;
 }
 
 #top_menu ul li a:currentLink{
