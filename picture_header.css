@@ -2,6 +2,7 @@
 	height: 400px;
 	width: 100%;
 	overflow: hidden;
+	margin-top: -34px;
 }
 #picture_header img{
 	filter: brightness(50%);
