@@ -1,12 +1,8 @@
+#picture_header{
+	height: 400px;
+	overflow: hidden;
+}
 #picture_header img{
 	filter: brightness(50%);
-	max-height: 50%;
 	width: 100%;
-}
-#main_wrapper{
-	position: absolute;
-	top: 466px;
-	height: 100%;
-	width: 100%;
-	background: white;
 }
