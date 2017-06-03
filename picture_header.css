@@ -1,9 +1,13 @@
 #picture_header{
 	height: 400px;
 	width: 100%;
+}
+#header_picture{
+	height: 400px;
+	width: 100%;
 	overflow: hidden;
 }
-#picture_header img{
+#header_picture img{
 	filter: brightness(50%);
 	width: 100%;
 	height: auto;
