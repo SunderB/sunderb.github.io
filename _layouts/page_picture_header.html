@@ -15,10 +15,21 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 </style>
 <body>
 	<header id="picture_header">
-		<img src="{{page.header_picture}}" alt="{{page.header_picture_name}}">
+		<img id="header_picture" onresize="header_picture_size" src="{{page.header_picture}}" alt="{{page.header_picture_name}}">
 		<h1>{{page.header_h1}}<h1>
 		<h2>{{page.header_h2}}<h2>
 	</header>
+	<script>
+		function header_picture_size() {
+			var width = document.getElementById("header_picture").width
+			var height = document.getElementById("header_picture").height
+		    	var nwidth  = img.naturalWidth;
+			var nheight = img.naturalHeight;
+			if (height = 400) {
+				document.getElementById("header_picture").width = nwidth
+			}
+		}
+	</script>
 	<div id="main_wrapper">
 		{% include header.html %}
 		<div id="content">
