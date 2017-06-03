@@ -9,12 +9,14 @@
 #picture_header h1{
 	position: absolute;
 	top: 50%;
+	left: 50%;
 	font-size: 40px;
 	color: white;
 }
 #picture_header h2{
 	position: absolute;
 	top: 60%;
+	left: 50%;
 	font-size: 30px;
 	color: white;
 }
