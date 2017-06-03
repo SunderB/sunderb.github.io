@@ -6,4 +6,6 @@
 #content{
 	position: absolute;
 	top: 466px;
+	height: 100%;
+	width: 100%;
 }
