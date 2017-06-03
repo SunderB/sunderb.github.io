@@ -1,27 +1,25 @@
 #picture_header{
 	height: 400px;
 	width: 100%;
-}
-#header_picture{
-	height: 400px;
-	width: 100%;
 	overflow: hidden;
 }
-#header_picture img{
+#picture_header img{
 	filter: brightness(50%);
 	width: 100%;
 	height: auto;
 }
 #picture_header h1{
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 25%;
+	left: 0%;
+	width: 100%;
+	text-align: center;
 	font-size: 40px;
 	color: white;
 }
 #picture_header h2{
 	position: absolute;
-	top: 60%;
+	top: 30%;
 	left: 50%;
 	font-size: 30px;
 	color: white;
