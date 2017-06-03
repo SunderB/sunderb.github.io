@@ -1,5 +1,6 @@
 #picture_header{
 	height: 400px;
+	max-width: 100%;
 	overflow: hidden;
 }
 #picture_header img{
