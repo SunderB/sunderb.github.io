@@ -1,0 +1,30 @@
+<!--
+SunderB's Website
+Copyright SunderB All Rights Reserved
+See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/master/LICENSE)
+-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8 "name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SunderB's Website - {{page.title}}</title>
+	<link rel="stylesheet" href="https://sunderb.github.io/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500,700|Raleway:700|Roboto">
+</head>
+<style>
+</style>
+<body>
+	<div id="main_wrapper">
+		{% include header.html %}
+    <header id="picture_header">
+	    <img src="{{page.header_picture}}" alt="{{page.header_picture_name}}">
+	    <h1>{{page.header_h1}}<h1>
+	    <h2>{{page.header_h2}}<h2>
+    </header>
+		<div id="content">
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+</html>
