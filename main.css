@@ -179,6 +179,7 @@ body{
 	filter: brightness(50%);
 	width: 100%;
 	height: auto;
+	min-height: 400px;
 }
 #picture_header h1{
 	position: absolute;
