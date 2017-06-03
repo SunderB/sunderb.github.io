@@ -1,11 +1,12 @@
 #picture_header{
 	height: 400px;
-	max-width: 100%;
+	width: 100%;
 	overflow: hidden;
 }
 #picture_header img{
 	filter: brightness(50%);
 	width: 100%;
+	height: auto;
 }
 #picture_header h1{
 	position: absolute;
