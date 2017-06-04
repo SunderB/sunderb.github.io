@@ -20,22 +20,11 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		<h2>{{page.header_h2}}</h2>
 	</header>
 	<script type="text/javascript">
-		
-		function header_picture_size() {
-			var width = document.getElementById("header_picture").style.width;
-			var height = document.getElementById("header_picture").style.height;
-			var nwidth  = document.getElementById("header_picture").naturalWidth;
-			var nheight = document.getElementById("header_picture").naturalHeight;
-			var aspectratio = nwidth/nheight;
-			var c_aspectratio = width/height;
-			var set_height = aspectratio * 400;
-			if (c_aspectratio =! aspectratio)	{
-				document.getElementById("header_picture").style.width = set_height;
-			}
-			if (document.documentElement.clientWidth > set_height)	{
-				document.getElementById("header_picture").style.width = document.documentElement.clientWidth;
-			}
-		}
+		var nwidth  = document.getElementById("header_picture").naturalWidth;
+		var nheight = document.getElementById("header_picture").naturalHeight;
+		var aspectratio = nwidth/nheight;
+		var set_min_width = aspectratio * 400;
+		document.getElementById("header_picture").style.min-width = set_min_width;
 	</script>
 	<div id="main_wrapper">
 		{% include header.html %}
