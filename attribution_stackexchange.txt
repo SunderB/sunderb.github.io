@@ -1,0 +1,2 @@
+Center anchor with image in div - https://stackoverflow.com/questions/23282890/center-anchor-with-image-in-div - answered by j08691
+JavaScript window resize event - https://stackoverflow.com/questions/641857/javascript-window-resize-event - answered by olliej and informatik01, solution used by WebWanderer
