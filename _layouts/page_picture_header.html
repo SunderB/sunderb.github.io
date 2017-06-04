@@ -10,6 +10,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 	<title>SunderB's Website - {{page.title}}</title>
 	<link rel="stylesheet" href="https://sunderb.github.io/main.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500,700|Raleway:700|Roboto">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <style>
 </style>
@@ -25,6 +26,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		var aspectratio = nwidth/nheight;
 		var set_min_width = aspectratio * 400;
 		document.getElementById("header_picture").style.minWidth = set_min_width;
+		$(".list").css({ "min-width": set_min_width + "px"});
 	</script>
 	<div id="main_wrapper">
 		{% include header.html %}
