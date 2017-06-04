@@ -29,7 +29,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		$(document).ready(function(){
 			$("#header_picture").resize(function(){
 				if (document.getElementById("header_picture").height = 400) {
-					var margin = document.getElementById("header_picture").width - document.documentElement.clientWidth;
+					var margin = document.getElementById("header_picture").style.width; - document.documentElement.clientWidth;
 					$("#header_picture").css({ "margin-left": "-" + margin + "px"});
 				}
 			});
