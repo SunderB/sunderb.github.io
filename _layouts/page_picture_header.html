@@ -28,8 +28,8 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		$("#header_picture").css({ "min-width": set_min_width + "px"});
 		function header_picture_centre() {
 			console.log("Picture resized");
-			if (document.getElementById("header_picture").style.height == 400) {
-				var margin = document.getElementById("header_picture").style.width - document.documentElement.clientWidth;
+			if (document.getElementById("header_picture").height == 400) {
+				var margin = document.getElementById("header_picture").width - document.documentElement.clientWidth;
 				$("#header_picture").css({ "left": "-" + margin + "px"});
 				console.log("Picture centered");
 			}
