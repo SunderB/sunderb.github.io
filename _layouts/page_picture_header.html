@@ -27,6 +27,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		var aspectratio = nwidth/nheight;
 		var set_min_width = aspectratio * 400;
 		$("#header_picture").css({ "min-width": set_min_width + "px"});
+		<!--
 		new ResizeSensor($("#header_picture"), function() {
 			console.log("Picture resized");
 			if (document.getElementById("header_picture").height == 400) {
@@ -35,6 +36,15 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 				console.log("Picture centered");
 			}
 		});
+		-->
+		window.addEventListener('resize', function(){
+			console.log("Window resized");
+			if (document.getElementById("header_picture").height == 400) {
+				var margin = document.getElementById("header_picture").width - document.documentElement.clientWidth;
+				$("#header_picture").css({ "left": "-" + margin + "px"});
+				console.log("Picture centered");
+			}
+		}, true);
 	</script>
 	<div id="main_wrapper">
 		{% include header.html %}
