@@ -16,7 +16,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 </style>
 <body>
 	<header id="picture_header">
-		<img id="header_picture" src="{{page.header_picture}}" alt="{{page.header_picture_name}}">
+		<img id="header_picture" onresize="header_picture_centre()" src="{{page.header_picture}}" alt="{{page.header_picture_name}}">
 		<h1 id="header_title">{{page.header_h1}}</h1>
 		<h2>{{page.header_h2}}</h2>
 	</header>
@@ -26,14 +26,12 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		var aspectratio = nwidth/nheight;
 		var set_min_width = aspectratio * 400;
 		$("#header_picture").css({ "min-width": set_min_width + "px"});
-		$(document).ready(function(){
-			$("#header_picture").resize(function(){
-				if (document.getElementById("header_picture").style.height == 400) {
-					var margin = document.getElementById("header_picture").style.width - document.documentElement.clientWidth;
-					$("#header_picture").css({ "left": "-" + margin + "px"});
-				}
-			});
-		});
+		function header_picture_centre() {
+			if (document.getElementById("header_picture").style.height == 400) {
+				var margin = document.getElementById("header_picture").style.width - document.documentElement.clientWidth;
+				$("#header_picture").css({ "left": "-" + margin + "px"});
+			}
+		}
 	</script>
 	<div id="main_wrapper">
 		{% include header.html %}
