@@ -174,12 +174,16 @@ body{
 	width: 100%;
 	overflow: hidden;
 	margin-top: -34px;
+	position:relative;
 }
 #picture_header img{
 	filter: brightness(50%);
 	width: 100%;
 	height: auto;
 	min-height: 400px;
+    	position:absolute;
+    	margin:auto;
+    	top:0;right:0;bottom:0;left:0;
 }
 #picture_header h1{
 	position: absolute;
