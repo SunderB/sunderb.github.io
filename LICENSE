@@ -1,16 +1,36 @@
 sunderb.github.io Current License
 ------------------------------------------------------------------------------------------------------------------------------------------
-sunderb.github.io License as of 11:40 GMT/UTC on 3rd June 2017
+sunderb.github.io License as of 17:25 GMT/UTC on 4th June 2017
 
 - 'The Website' or 'My Website' refers to the website this license applies to, sunderb.github.io
-- 'Website Code' refers to the code of the website.
+- 'Website Code' refers to the code of the website, apart from the Exceptions stated below.
 - 'Website Layout' refers to the visible layout of the website.
 - 'Unique Content' or 'my content' refers to any text, images, posts and any other content on the website which I (SunderB) have made. 'Unique Content' does not refer to any linked downloads or webpages on the website. They may be under a different license.
 
 All Website Code, Unique Content and the Website Layout is ALL RIGHTS RESERVED to me, SunderB.
 
-Website code and unique content may be used where Fair Use is appilcable, but only for uses that would be classed as legal in the United Kingdom.
+Website code and unique content may be used where Fair Use is appilcable, but only for uses that would be classed as legal in the United
+Kingdom.
 
-Website code is provided 'as-is', without any express or implied warranty. In no event will I (SunderB) be held liable for any damages arising from the use of this code in other projects/websites.
+Website code is provided 'as-is', without any express or implied warranty. In no event will I (SunderB) be held liable for any damages
+arising from the use of this code in other projects/websites.
 
-This version of this licence is effective for any version of the website made after 11:40 GMT/UTC on 3rd June 2017, up to the version of the website made before a new version of this license is made.
+Exceptions:
+ResizeSensor.js is Copyright Marc J. Schmidt. and licensed under the MIT license:
+
+  MIT License (This license only applies to ResizeSensor.js) ('this software' only refers to ResizeSensor.js):
+  ----------------------------------------------------------------------------------------------------------------
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge,
+    publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software
+  
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+    FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  ----------------------------------------------------------------------------------------------------------------
+
+This version of this licence is effective for any version of the website made after 17:25 GMT/UTC on 4th June 2017, up to the version of the website made before a new version of this license is made.
