@@ -11,6 +11,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 	<link rel="stylesheet" href="https://sunderb.github.io/main.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500,700|Raleway:700|Roboto">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="ResizeSensor.js"</script>
 </head>
 <style>
 </style>
@@ -26,14 +27,14 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		var aspectratio = nwidth/nheight;
 		var set_min_width = aspectratio * 400;
 		$("#header_picture").css({ "min-width": set_min_width + "px"});
-		function header_picture_centre() {
+		new ResizeSensor($('#headder_picture'), function() {
 			console.log("Picture resized");
 			if (document.getElementById("header_picture").height == 400) {
 				var margin = document.getElementById("header_picture").width - document.documentElement.clientWidth;
 				$("#header_picture").css({ "left": "-" + margin + "px"});
 				console.log("Picture centered");
 			}
-		}
+		});
 	</script>
 	<div id="main_wrapper">
 		{% include header.html %}
