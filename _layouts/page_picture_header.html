@@ -20,8 +20,6 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		<h2>{{page.header_h2}}</h2>
 	</header>
 	<script>
-		document.getElementById("header_title").innerHTML = "Hi!";
-
 		function header_picture_size() {
 			var width = document.getElementById("header_picture").style.width;
 			var height = document.getElementById("header_picture").style.height;
@@ -36,6 +34,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 			if (document.documentElement.clientWidth > set_height)	{
 				document.getElementById("header_picture").style.width = document.documentElement.clientWidth;
 			}
+			document.getElementById("header_title").innerHTML = width;
 		}
 	</script>
 	<div id="main_wrapper">
