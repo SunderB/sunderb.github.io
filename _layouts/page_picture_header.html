@@ -28,7 +28,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		$("#header_picture").css({ "min-width": set_min_width + "px"});
 		$(document).ready(function(){
 			$("#header_picture").resize(function(){
-				if (document.getElementById("header_picture").height = 400) {
+				if (document.getElementById("header_picture").style.height == 400) {
 					var margin = document.getElementById("header_picture").style.width; - document.documentElement.clientWidth;
 					$("#header_picture").css({ "margin-left": "-" + margin + "px"});
 				}
