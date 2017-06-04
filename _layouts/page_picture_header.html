@@ -20,13 +20,21 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		<h2>{{page.header_h2}}</h2>
 	</header>
 	<script>
+		window.onload = function myFunction() {
+			document.getElementById("header_title").innerHTML = "Hi!";
+		}
+
 		function header_picture_size() {
 			var width = document.getElementById("header_picture").style.width;
 			var height = document.getElementById("header_picture").style.height;
-		    	var nwidth  = document.getElementById("header_picture").naturalWidth;
+			var nwidth  = document.getElementById("header_picture").naturalWidth;
 			var nheight = document.getElementById("header_picture").naturalHeight;
-			if (height = 400) {
-				document.getElementById("header_picture").style.width = nwidth;
+			var aspectratio = nwidth/nheight;
+			if (width/height =! aspectratio)	{
+				document.getElementById("header_picture").style.width = aspectratio * 400;
+			}
+			if (document.documentElement.clientWidth > aspectratio * 400)	{
+				document.getElementById("header_picture").style.width = document.documentElement.clientWidth;
 			}
 		}
 	</script>
