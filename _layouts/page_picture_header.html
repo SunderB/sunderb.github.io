@@ -21,12 +21,12 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 	</header>
 	<script>
 		function header_picture_size() {
-			var width = document.getElementById("header_picture").width
-			var height = document.getElementById("header_picture").height
-		    	var nwidth  = img.naturalWidth;
-			var nheight = img.naturalHeight;
+			var width = document.getElementById("header_picture").style.width
+			var height = document.getElementById("header_picture").style.height
+		    	var nwidth  = document.getElementById("header_picture").style.naturalWidth;
+			var nheight = document.getElementById("header_picture").style.naturalHeight;
 			if (height = 400) {
-				document.getElementById("header_picture").width = nwidth
+				document.getElementById("header_picture").style.width = nwidth
 			}
 		}
 	</script>
