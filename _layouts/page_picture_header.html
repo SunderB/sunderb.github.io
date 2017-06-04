@@ -28,10 +28,12 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 			var nwidth  = document.getElementById("header_picture").naturalWidth;
 			var nheight = document.getElementById("header_picture").naturalHeight;
 			var aspectratio = nwidth/nheight;
-			if (width/height =! aspectratio)	{
-				document.getElementById("header_picture").style.width = aspectratio * 400;
+			var c_aspectratio = width/height;
+			var set_height = aspectratio * 400;
+			if (c_aspectratio =! aspectratio)	{
+				document.getElementById("header_picture").style.width = set_height;
 			}
-			if (document.documentElement.clientWidth > aspectratio * 400)	{
+			if (document.documentElement.clientWidth > set_height)	{
 				document.getElementById("header_picture").style.width = document.documentElement.clientWidth;
 			}
 		}
