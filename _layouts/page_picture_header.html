@@ -27,7 +27,7 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 		var aspectratio = nwidth/nheight;
 		var set_min_width = aspectratio * 400;
 		$("#header_picture").css({ "min-width": set_min_width + "px"});
-		new ResizeSensor($('#header_picture'), function() {
+		new ResizeSensor($("#header_picture"), function() {
 			console.log("Picture resized");
 			if (document.getElementById("header_picture").height == 400) {
 				var margin = document.getElementById("header_picture").width - document.documentElement.clientWidth;
