@@ -183,7 +183,7 @@ body{
 }
 #picture_header h1{
 	position: absolute;
-	top: 25%;
+	top: 240px;
 	left: 0%;
 	width: 100%;
 	text-align: center;
@@ -192,7 +192,7 @@ body{
 }
 #picture_header h2{
 	position: absolute;
-	top: 30%;
+	top: 290px;
 	left: 0%;
 	width: 100%;
 	text-align: center;
