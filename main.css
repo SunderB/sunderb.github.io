@@ -230,6 +230,10 @@ article header{
 article footer{
 	text-align: right;
 }
+.richTextBox textarea{
+	cols: 50;
+	rows: 10;
+}
 #side_info{
 	float: right;
 	width: 20%;
