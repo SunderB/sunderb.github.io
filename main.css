@@ -233,6 +233,7 @@ article footer{
 .richTextBox textarea{
 	cols: 50;
 	rows: 10;
+	resize: none;
 }
 #side_info{
 	float: right;
