@@ -230,7 +230,7 @@ article header{
 article footer{
 	text-align: right;
 }
-.richTextBox textarea{
+.richTextEditor textarea{
 	cols: 50;
 	rows: 10;
 	resize: none;
