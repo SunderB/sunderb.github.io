@@ -230,7 +230,7 @@ article header{
 article footer{
 	text-align: right;
 }
-.richTextEditor textarea{
+textarea{
 	resize: none;
 }
 #side_info{
