@@ -233,6 +233,12 @@ article footer{
 textarea{
 	resize: none;
 }
+.textarea_left {
+	float: left;	
+}
+.textarea_right {
+	float: right;	
+}
 #side_info{
 	float: right;
 	width: 20%;
