@@ -21,9 +21,9 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 			{% endif %}
 			<h2>{{ page.header_h2 }}</h2>
 		</header>
-	{% endif %}	
+	{% endif %}
 	<script type="text/javascript">
-		{% include javascript.html %}
+		{% include resize_main_section.js %}
 		{% if page.header == "picture" %}
 			$("#header_picture").ready(function(){
 				var nwidth  = document.getElementById("header_picture").naturalWidth;

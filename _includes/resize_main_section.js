@@ -1,3 +1,4 @@
+// Adjust the main section width and article margins when there isn't a side bar
 $(document).ready(function(){
   var sideBarExists = document.getElementById("side_info");
   if (sideBarExists == null) {
