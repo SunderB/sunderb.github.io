@@ -169,6 +169,9 @@ body{
 #top_header{
 	padding: 20px;
 }
+#top_header h1 {
+     display: inline;   
+}
 #github-avatar-pic {
 	display: inline-block;
 	width: 50px;
