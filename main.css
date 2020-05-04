@@ -60,6 +60,7 @@ div.header h1 {
 div.container {
     padding: 10px;
 }
+
 #top_menu {
 	text-align: center;
 	background-color: #00A2E8;
@@ -167,6 +168,12 @@ body{
 }
 #top_header{
 	padding: 20px;
+}
+#github-avatar-pic {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+        float: left;
 }
 #second_header{
 	padding: 20px;
