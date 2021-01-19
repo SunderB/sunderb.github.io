@@ -265,7 +265,12 @@ textarea{
 #bottom_footer{
 	clear: both;
 	text-align: center;
-	padding: 20px;
+	padding: 20px 0; /* 20px vertical; 0px horizontal */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  text-align: center;
 	border-top: 2px solid green
 }
 
