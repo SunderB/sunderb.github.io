@@ -6,58 +6,58 @@ See LICENSE for full license (https://github.com/SunderB/sunderb.github.io/blob/
 <!doctype html>
 <html lang="en">
 <head>
-	{% include head.html %}
+    {% include head.html %}
 </head>
 <style>
 </style>
 <body>
-	{% if page.header == "picture" %}
-		<header id="picture_header">
-			<img id="header_picture" src="{{ page.header_picture }}" alt="{{ page.header_picture_name }}">
-			{% if page.header_h1 == null %}
-				<h1 id="header_title">{{ page.title }}</h1>
-			{% else %}
-				<h1 id="header_title">{{ page.header_h1 }}</h1>
-			{% endif %}
-			<h2>{{ page.header_h2 }}</h2>
-		</header>
-	{% endif %}
-	<script type="text/javascript">
-		{% include resize_main_section.js %}
-		{% if page.header == "picture" %}
-			$("#header_picture").ready(function(){
-				var nwidth  = document.getElementById("header_picture").naturalWidth;
-				var nheight = document.getElementById("header_picture").naturalHeight;
-				var aspectratio = nwidth/nheight;
-				var set_min_width = aspectratio * 400;
-				$("#header_picture").css({ "min-width": set_min_width + "px"});
-				window.addEventListener('resize', function(){
-					if (document.getElementById("header_picture").height == 400) {
-						var width_dif = document.getElementById("header_picture").width - document.documentElement.clientWidth;
-						var move = width_dif/2;
-						$("#header_picture").css({ "left": "-" + move + "px"});
-					} else {
-						$("#header_picture").css({ "left": "0px"});
-					}
-				}, true);
-			});
-		{% endif %}
-	</script>
-	<div id="main_wrapper">
-		{% include header.html %}
-		<div id="content">
-	{% if page.header == "text" %}
-		<header id="second_header">
-			{% if page.header_h1 == null %}
-				<h1> {{ page.title }} </h1>
-			{% else %}
-				<h1> {{ page.header_h1 }} </h1>
-			{% endif %}
-		</header>
-	{% endif %}
-	{{ content }}
-		</div>
-		{% include footer.html %}
-	</div>
+    {% if page.header == "picture" %}
+        <header id="picture_header">
+            <img id="header_picture" src="{{ page.header_picture }}" alt="{{ page.header_picture_name }}">
+            {% if page.header_h1 == null %}
+                <h1 id="header_title">{{ page.title }}</h1>
+            {% else %}
+                <h1 id="header_title">{{ page.header_h1 }}</h1>
+            {% endif %}
+            <h2>{{ page.header_h2 }}</h2>
+        </header>
+    {% endif %}
+    <script type="text/javascript">
+        {% include resize_main_section.js %}
+        {% if page.header == "picture" %}
+            $("#header_picture").ready(function(){
+                var nwidth  = document.getElementById("header_picture").naturalWidth;
+                var nheight = document.getElementById("header_picture").naturalHeight;
+                var aspectratio = nwidth/nheight;
+                var set_min_width = aspectratio * 400;
+                $("#header_picture").css({ "min-width": set_min_width + "px"});
+                window.addEventListener('resize', function(){
+                    if (document.getElementById("header_picture").height == 400) {
+                        var width_dif = document.getElementById("header_picture").width - document.documentElement.clientWidth;
+                        var move = width_dif/2;
+                        $("#header_picture").css({ "left": "-" + move + "px"});
+                    } else {
+                        $("#header_picture").css({ "left": "0px"});
+                    }
+                }, true);
+            });
+        {% endif %}
+    </script>
+    <div id="main_wrapper">
+        {% include header.html %}
+        <div id="content">
+    {% if page.header == "text" %}
+        <header id="second_header">
+            {% if page.header_h1 == null %}
+                <h1> {{ page.title }} </h1>
+            {% else %}
+                <h1> {{ page.header_h1 }} </h1>
+            {% endif %}
+        </header>
+    {% endif %}
+    {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
 </body>
 </html>
