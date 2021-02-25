@@ -74,6 +74,7 @@ div.container {
     top: 0;
     width: 100%;
     background-color: #00A2E8;
+    height: 150px;
 }
 #top_menu ul li    {
     display: inline-block;
@@ -186,7 +187,7 @@ body{
     height: 400px;
     width: 100%;
     overflow: hidden;
-    margin-top: -34px;
+    /*! margin-top: -34px; */
     position:relative;
 }
 #picture_header img{
@@ -291,3 +292,4 @@ textarea{
         padding: 0px;
     }
 }
+
