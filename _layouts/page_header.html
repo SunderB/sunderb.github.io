@@ -11,17 +11,6 @@ See LICENSE.md for full license (https://github.com/SunderB/sunderb.github.io/bl
 <style>
 </style>
 <body>
-    {% if page.header == "picture" %}
-        <header id="picture_header">
-            <img id="header_picture" src="{{ page.header_picture }}" alt="{{ page.header_picture_name }}">
-            {% if page.header_h1 == null %}
-                <h1 id="header_title">{{ page.title }}</h1>
-            {% else %}
-                <h1 id="header_title">{{ page.header_h1 }}</h1>
-            {% endif %}
-            <h2>{{ page.header_h2 }}</h2>
-        </header>
-    {% endif %}
     <script type="text/javascript">
         {% include resize_main_section.js %}
         {% if page.header == "picture" %}
@@ -45,19 +34,31 @@ See LICENSE.md for full license (https://github.com/SunderB/sunderb.github.io/bl
     </script>
     <div id="main_wrapper">
         {% include header.html %}
-        <div id="content">
-    {% if page.header == "text" %}
+        {% if page.header == "picture" %}
+            <header id="picture_header">
+                <img id="header_picture" src="{{ page.header_picture }}" alt="{{ page.header_picture_name }}">
+                {% if page.header_h1 == null %}
+                    <h1 id="header_title">{{ page.title }}</h1>
+                {% else %}
+                    <h1 id="header_title">{{ page.header_h1 }}</h1>
+                {% endif %}
+                <h2>{{ page.header_h2 }}</h2>
+            </header>
+        {% endif %}
+        {% if page.header == "text" %}
         <header id="second_header">
-            {% if page.header_h1 == null %}
-                <h1> {{ page.title }} </h1>
-            {% else %}
-                <h1> {{ page.header_h1 }} </h1>
-            {% endif %}
+        {% if page.header_h1 == null %}
+            <h1> {{ page.title }} </h1>
+        {% else %}
+            <h1> {{ page.header_h1 }} </h1>
+        {% endif %}
         </header>
-    {% endif %}
-    {{ content }}
+        {% endif %}
+        
+        <div id="content">
+            {{ content }}
         </div>
-        {% include footer.html %}
     </div>
+    {% include footer.html %}
 </body>
 </html>
