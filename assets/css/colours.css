@@ -1,0 +1,51 @@
+:root {
+  --gradient-red:     linear-gradient(to right, hsla(330, 100%, 60%, 0.75), hsla(012, 100%, 50%, 0.75));
+  --gradient-orange:  linear-gradient(to right, hsla(030, 100%, 60%, 0.75), hsla(060, 100%, 60%, 0.75));
+  --gradient-yellow:  linear-gradient(to right, hsla(060, 100%, 60%, 0.75), hsla(090, 100%, 60%, 0.75));
+  --gradient-green:   linear-gradient(to right, hsla(090, 100%, 60%, 0.75), hsla(120, 100%, 60%, 0.75));
+  --gradient-blue:    linear-gradient(to right, hsla(180, 100%, 60%, 0.75), hsla(220, 090%, 50%, 0.75));
+  --gradient-purple:  linear-gradient(to right, hsla(240, 100%, 60%, 0.75), hsla(270, 100%, 60%, 0.75));
+
+  --gradient-rainbow: linear-gradient(
+    to right,
+    hsla(0, 100%, 60%, 0.75),
+    hsla(30, 100%, 60%, 0.75),
+    hsla(60, 100%, 60%, 0.75),
+    hsla(90, 100%, 60%, 0.75),
+    hsla(120, 100%, 60%, 0.75),
+    hsla(150, 100%, 60%, 0.75),
+    hsla(180, 100%, 60%, 0.75),
+    hsla(210, 100%, 60%, 0.75),
+    hsla(240, 100%, 60%, 0.75),
+    hsla(270, 100%, 60%, 0.75),
+    hsla(300, 100%, 60%, 0.75),
+    hsla(330, 100%, 60%, 0.75));
+}
+
+.bg-grad-red {
+  background: var(--gradient-red),url('/assets/img/noise.svg');
+}
+
+.bg-grad-orange {
+  background: var(--gradient-orange),url('/assets/img/noise.svg');
+}
+
+.bg-grad-yellow {
+  background: var(--gradient-yellow),url('/assets/img/noise.svg');
+}
+
+.bg-grad-green {
+  background: var(--gradient-green),url('/assets/img/noise.svg');
+}
+
+.bg-grad-blue {
+  background: var(--gradient-blue),url('/assets/img/noise.svg');
+}
+
+.bg-grad-purple {
+  background: var(--gradient-purple),url('/assets/img/noise.svg');
+}
+
+footer {
+  background: var(--gradient-rainbow);
+}

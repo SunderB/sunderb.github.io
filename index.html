@@ -1,14 +1,151 @@
 ---
 redirect_from:
 - /home
-layout: page_header
+layout: default
 title: Home
 header: picture
-header_picture: bluegradient.png
+header_picture: assets/img/bluegradient.png
 header_picture_name: blue gradient
 header_h1: Hi there!
 header_h2: Welcome to my website!
 ---
+
+<section class="full_width_section bg-grad-red">
+  <div class="section_content">
+    <div class="column">
+      <h2>About me :)</h2>
+      <p>Hi! My name's Sunder.<br> I'm a student who's interested in: tinkering with tech and computers 💻, music 🎵, and games 🎮 :)</p>
+    </div>
+    <div class="column no_vert_margin">
+      <p>
+      <img src="assets/img/drawings/waving.png" alt="Me waving" style="width: 60%;"/>
+    </p>
+    </div>
+  </div>
+</section>
+
+<section class="full_width_section bg-grad-orange">
+  <div class="section_content">
+    <div class="column">
+      <p>Test test test</p>
+    </div>
+    <div class="column">
+      <h2>Projects I've contributed to</h2>
+      <p>
+        <ul>
+          <li>Sonic Pi</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="full_width_section bg-grad-yellow">
+  <div class="section_content">
+    <div class="column">
+      <h2>Events I've participated in</h2>
+      <p>
+        <ul>
+          <li>Local Hack Day: Build & Share 2021</li>
+          <li>GMTK Game Jam 2021</li>
+        </ul>
+      </p>
+    </div>
+    <div class="column">
+      <img src="/assets/img/drawings/stickers.png" width="100%" alt="Event Swag/Stickers"/>
+    </div>
+  </div>
+</section>
+
+<section class="full_width_section bg-grad-green">
+  <div class="section_content">
+    <div class="column">
+      <!-- <p>Test test test</p> -->
+    </div>
+    <div class="column">
+      <h2>Projects</h2>
+      <p>
+        <article class="card">
+            <header>
+                <hgroup>
+                    <a href="https://github.com/SunderB/sb-atom-sonic-pi"><h3>sb-atom-sonic-pi</h3></a>
+                    <label>atom</label>
+                    <h4>A package for the <a href='https://atom.io'>Atom text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)</h4>
+                </hgroup>
+            </header>
+            <div class="card-content">
+              {{ include.content }}
+            </div>
+            <hr/>
+            <footer style="display: flex;">
+              <p style="text-align: left; flex: 1;"><img src="/assets/img/icons/octicons/versions-24.svg" height="18" alt="Latest version"/> 1.0.0-beta.3</p>
+              <p style="text-align: right; flex: 1;"><img src="/assets/img/icons/octicons/clock-24.svg" height="18" alt="Last updated"/> 31 Jan 2021</p>
+            </footer>
+        </article>
+
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="full_width_section bg-grad-blue">
+  <div class="section_content">
+    <div class="column">
+      <h2>Games</h2>
+      {% include card_software.html title="🎮 Asteroids" url="/games/asteroids" description="A little asteroids game made in Game Maker." latest_version="16w46a" last_updated="14 Nov 2016" %}
+      {% include card_software.html title="🎮 Do you want to build a snowman?" url="https://sunderb.itch.io/do-you-want-to-build-a-snowman" description="A prototype game about building snowmen. GMTK Game Jame 2021 submission." latest_version="0.0.1" last_updated="14 Jun 2021" %}
+      <!-- <article class="card">
+          <header>
+              <hgroup>
+                  <a href="games/asteroids.html"><h3>Asteroids</h3></a>
+                  <h4>A little asteroids game made in Game Maker.</h4>
+              </hgroup>
+          </header>
+
+          <div class="card-content">
+
+          </div>
+
+          <hr/>
+
+          <footer style="display: flex;">
+            <p style="text-align: left; flex: 1;"><img src="/assets/img/icons/octicons/versions-24.svg" height="18"/> Latest Build: 16w46a</p>
+            <p style="text-align: right; flex: 1;"><img src="/assets/img/icons/octicons/clock-24.svg" height="18"/>14/11/2016</p>
+          </footer>
+      </article> -->
+    </div>
+    <div class="column">
+      <!-- <p>Test test test</p> -->
+    </div>
+  </div>
+</section>
+
+<!-- <section class="full_width_section bg-grad-purple">
+  <div class="section_content">
+    <div class="column">
+      <h2>Music</h2>
+      <p>Test test test</p>
+    </div>
+    <div class="column">
+      <p>Test test test</p>
+    </div>
+  </div>
+</section> -->
+
+<section class="full_width_section bg-grad-blue">
+  <div class="section_content">
+    <div class="column">
+      <h2>Socials</h2>
+      <ul>
+        <p><img src="/assets/img/logos/github.png" class="social-icon"/> GitHub: <a href="https://github.com/SunderB">@SunderB</a></p>
+        <p><img src="/assets/img/logos/twitter.png" class="social-icon"/> Twitter (rarely used): <a href="https://twitter.com/sunderb_">@SunderB_</a></p>
+      </ul>
+    </div>
+    <div class="column">
+      <img src="/assets/img/drawings/speech-bubble.png" width="100%" alt="Speech bubble"/>
+    </div>
+  </div>
+</section>
 
 <section id="main_section">
     <article id="i_article">
@@ -27,5 +164,11 @@ header_h2: Welcome to my website!
         <footer>
         </footer>
     </article>
+
+    <table class="calendar">
+      <tr>
+      </tr>
+    </table>
+
 
 </section>

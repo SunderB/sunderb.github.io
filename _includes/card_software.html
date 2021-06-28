@@ -1,0 +1,18 @@
+<article class="card">
+    <header>
+        <hgroup>
+            <a href="{{ include.url }}"><h3>{{ include.title }}</h3></a>
+            <h4>{{ include.description }}</h4>
+        </hgroup>
+    </header>
+    <div class="card-content">
+      {{ include.content }}
+    </div>
+    <hr/>
+    <footer style="display: flex;">
+      {% if include.latest_version %}
+      <p style="text-align: left; flex: 1;"><img src="/assets/img/icons/octicons/versions-24.svg" height="18"/> {{ include.latest_version }}</p>
+      {% endif %}
+      <p style="text-align: right; flex: 1;"><img src="/assets/img/icons/octicons/clock-24.svg" height="18"/> {{ include.last_updated }}</p>
+    </footer>
+</article>

@@ -1,0 +1,9 @@
+<header id="picture_header">
+    <img id="header_picture" src="{{ page.header_picture }}" alt="{{ page.header_picture_name }}">
+    {% if page.header_h1 == null %}
+        <h1 id="header_title">{{ page.title }}</h1>
+    {% else %}
+        <h1 id="header_title">{{ page.header_h1 }}</h1>
+    {% endif %}
+    <h2>{{ page.header_h2 }}</h2>
+</header>

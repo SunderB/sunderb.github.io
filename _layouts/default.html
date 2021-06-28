@@ -5,16 +5,35 @@ See LICENSE.md for full license (https://github.com/SunderB/sunderb.github.io/bl
 -->
 <!doctype html>
 <html lang="en">
-{% include head.html %}
+<head>
+    {% include head.html %}
+</head>
 <style>
 </style>
 <body>
+    <!-- <script type="text/javascript">
+        {% include resize_main_section.js %}
+    </script> -->
+
+    {% if page.header == "picture" %}
+    <script type="text/javascript">
+        {% include resize_picture_header.js %}
+    </script>
+    {% endif %}
+
     {% include navbar.html %}
+
     <div id="main_wrapper">
+        {% if page.header == "picture" %}
+            {% include picture_header.html %}
+        {% endif %}
+
         <div id="content">
+            {% if page.header == "text" %}
+                {% include text_header.html %}
+            {% endif %}
 
             {{ content }}
-
         </div>
     </div>
     {% include footer.html %}

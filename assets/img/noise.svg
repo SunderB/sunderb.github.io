@@ -1,0 +1,23 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  width='5000' height='300'>
+
+    <filter id='noise' x='0' y='0'>
+            <feTurbulence
+              type='fractalNoise'
+              baseFrequency='1'
+              numOctaves="1000"
+              stitchTiles='stitch'/>
+
+    </filter>
+
+    <filter id='blur' x='-100' y='-100'>
+            <feGaussianBlur in="SourceAlpha" stDeviation="5"></feGaussianBlur>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+
+    <rect width='5000' height='300' fill='#fff'/>
+    <rect width='5000' height='300' filter="url(#noise)" opacity='0.5'/>
+    <rect width='5000' height='300' filter="url(#blur)" opacity='0.2'/>
+</svg>

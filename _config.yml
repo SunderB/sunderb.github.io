@@ -7,6 +7,7 @@ gems:
    - jekyll-coffeescript
    - jekyll-paginate
    - jekyll-redirect-from
+#   - jemoji
 
-url: https://sunderb.github.io
-#url: http://127.0.0.1:4000 # for local testing
+#url: https://sunderb.github.io
+url: http://127.0.0.1:4000 # for local testing
