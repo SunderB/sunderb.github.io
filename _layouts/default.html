@@ -23,19 +23,20 @@ See LICENSE.md for full license (https://github.com/SunderB/sunderb.github.io/bl
 
     {% include navbar.html %}
 
-    <div id="main_wrapper">
+    <div id="main_wrapper" class="{{ page.main_class }}">
         {% if page.header == "picture" %}
             {% include picture_header.html %}
         {% endif %}
 
-        <div id="content">
+        <main id="content">
             {% if page.header == "text" %}
                 {% include text_header.html %}
             {% endif %}
 
             {{ content }}
-        </div>
+        </main>
     </div>
+
     {% include footer.html %}
 </body>
 </html>

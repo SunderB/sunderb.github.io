@@ -20,18 +20,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1{
     font-family: 'Raleway', sans-serif;
     font-size: 20pt;
 }
-h2,h3,h4,p,a{
+h2,h3,h4,p,a,details{
     /* font-family: 'Roboto', sans-serif; */
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 4px 0px;
 }
 h2{
     /* font: bold 14px Tahoma; */
     font-size: 18pt;
+    margin: 8px 0px;
     /* font-weight:700; */
 }
 
@@ -81,8 +84,9 @@ div.container {
 /* Navigation bar */
 .navbar {
     text-align: center;
-    background-color: #00A2E8;
+    background-color: #21BCFF;
     height: var(--navbar-height);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .navbar ul {
   /* Layout */
@@ -93,15 +97,13 @@ div.container {
   overflow: hidden;
 
   display: flex;
-
   margin: 0px auto;
-
 
   /* Style */
   /* Hide the list bullet points */
   list-style-type: none;
   /* Set colours */
-  background-color: #00A2E8;
+  /* background-color: #00A2E8; */
 }
 .navbar ul li {
   display: inline-block;
@@ -125,7 +127,7 @@ div.container {
   text-decoration: none;
   /* Set colours */
   color: black;
-  background-color: #00A2E8;
+  /* background-color: #00A2E8; */
 }
 .navbar ul li a:hover:not(.active) {
     background-color: #333;
@@ -223,7 +225,7 @@ body{
 }
 #second_header{
     padding: 20px;
-    margin-top: 20px;
+    /* padding-top: 40px; */
     border: 1px solid black;
 }
 #picture_header{
@@ -271,11 +273,11 @@ body{
     /* float: left;
     width: 60%;
     margin: 2.5% 0; */
-    max-width: 1000px;
+    max-width: var(--content-max-width);
     margin: auto;
     text-align: left;
     background-color: rgb(255, 255, 255);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 textarea{
@@ -320,21 +322,24 @@ textarea{
 .full_width_section {
   width: 100%;
 }
-
+.full_width_section > header {
+  text-align: center;
+  padding: 8px 0px;
+}
 .full_width_section > .section_content {
   max-width: 1200px;
   margin: auto;
   text-align: left;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   display: flex;
+  flex-direction: row;
 }
-
 .section_content > .column {
   flex: 1;
   margin: 0px 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .section_content > .column.no_vert_margin {
@@ -343,14 +348,14 @@ textarea{
   padding-bottom: 0px;
 }
 
-.section_content h2 {
+.full_width_section h2 {
   font-family: 'DM Mono', monospace;
   /* font-family: 'Indie Flower', cursive; */
   font-weight: 500;
   font-size: 24pt;
 }
 
-.section_content p {
+.section_content :is(p,summary), .section_content :is(p,summary) * {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
   font-size: 18pt;
@@ -372,7 +377,7 @@ textarea{
 }
 
 /* Cards */
-article {
+/* article {
     padding: 20px;
     margin: 15px;
     background: rgb(255, 255, 255);
@@ -389,7 +394,7 @@ article header{
 }
 article footer{
     text-align: right;
-}
+} */
 
 /* div.card {
     width: 40%;
@@ -404,30 +409,57 @@ article footer{
     margin: 15px;
     background: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(100, 100, 100);
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     overflow: hidden;
 }
-.card header{
-    padding: 10px 10px 15px 10px;
+.card * {
+  margin: 0;
 }
-.card h3,h4 {
-    font-family: "DM Mono", monospace;
+.card header{
+  padding: 10px 10px 15px 10px;
+}
+.card :is(h3,h4), .card :is(h3,h4) a{
+  font-family: "DM Mono", monospace;
+}
+.card main {
+  margin: 16px;
 }
 .card footer{
-    text-align: right;
-    margin: 0;
-    padding: 5px 10px;
+  text-align: right;
+  margin: 0;
+  padding: 5px 10px;
+  background: #a3f2ff;
 }
 
-@media screen and (max-width: 1040px) {
-    #content{
+details {
+	background: rgba(255,255,255,0.5);
+	padding: 8px;
+	border-radius: 8px;
+}
+details hr {
+  color: lightgrey;
+  margin-top: 8px;
+}
+details .details_content {
+  font-family: 'Indie Flower', cursive;
+  padding: 8px;
+}
+details summary {
+  font-family: 'DM Mono', monospace;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+    /* #content{
         margin: 0px 20px 0px 20px;
+    } */
+    .full_width_section .section_content {
+      flex-direction: column;
     }
 }
 
-@media screen and (max-width: 550px) {
+/* @media screen and (max-width: 550px) {
     #main_section{
         width: 100%;
     }
@@ -437,4 +469,4 @@ article footer{
         margin: 0px;
         padding: 0px;
     }
-}
+} */

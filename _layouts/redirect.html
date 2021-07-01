@@ -1,0 +1,21 @@
+<!--
+Redirect to another web page
+-->
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <link rel="canonical" href="{{ page.destination }}">
+    <meta http-equiv="refresh" content="0; url={{ page.destination }}">
+    <meta name="robots" content="noindex">
+  </head>
+
+  <style> * { font-family: sans-serif; } </style>
+
+  <body>
+    <h1>Redirecting to {{ page.destination }} ...</h1>
+    <a href="{{ page.destination }}">Click here if you are not redirected.</a>
+    <script>location="{{ page.destination }}"</script>
+  </body>
+</html>

@@ -1,34 +1,48 @@
 ---
 layout: default
 title: Projects
-header: text
+<!-- header: text -->
+main_class: bg-grad-orange
 ---
 
-<section id="main_section">
-    <article id="i_article">
+<section class="full_width_section">
+  <header>
+    <h2>Projects</h2>
+  </header>
+  <div class="section_content">
+    <div class="column">
+      <article class="card">
         <header>
-            <hgroup>
-                <a href="https://github.com/SunderB/sb-atom-sonic-pi"><h1>sb-atom-sonic-pi</h1></a>
-                <h2>A package for the <a href="https://atom.io">Atom text editor</a> to interface with <a href="https://sonic-pi.net">Sonic Pi</a>. Based on <a href="https://github.com/rkh/atom-sonic">rkh/atom-sonic</a>. (May not be regularly maintained!)</h2>
-            </hgroup>
+          <hgroup>
+            <a href="https://github.com/SunderB/sb-atom-sonic-pi"><h3>sb-atom-sonic-pi</h3></a>
+            <label>atom</label>
+            <h4>A package for the <a href='https://atom.io'>Atom text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)</h4>
+          </hgroup>
         </header>
-        <p></p>
-        <footer>
-            <p></p>
+        <main class="card-content">
+          {{ include.content }}
+        </main>
+        <hr/>
+        <footer style="display: flex;">
+          <p style="text-align: left; flex: 1;"><img src="assets/img/icons/octicons/versions-24.svg" height="18" alt="Latest version"/> 1.0.0-beta.3</p>
+          <p style="text-align: right; flex: 1;"><img src="assets/img/icons/octicons/clock-24.svg" height="18" alt="Last updated"/> 31 Jan 2021</p>
         </footer>
-    </article>
-
-    <article id="i_article">
-        <header>
-            <hgroup>
-                <a href="https://github.com/SunderB/kindlefirmwarelist"><h1>Kindle Fire Firmware Download List</h1></a>
-                <h2>A list of firmware download links. Downloads straight from from Amazon's website. Not regularly maintained!</h2>
-            </hgroup>
-        </header>
-        <p></p>
-        <footer>
-            <p></p>
-        </footer>
-    </article>
-
+      </article>
+    </div>
+    <div class="column">
+      <article class="card">
+          <header>
+              <hgroup>
+                  <a href="https://github.com/SunderB/kindlefirmwarelist"><h3>Kindle Fire Firmware Download List</h3></a>
+                  <h4>A list of firmware download links. Downloads straight from from Amazon's website. Not regularly maintained!</h4>
+              </hgroup>
+          </header>
+          <hr/>
+          <footer style="display: flex;">
+            <!-- <p style="text-align: left; flex: 1;"><img src="assets/img/icons/octicons/versions-24.svg" height="18" alt="Latest version"/> 1.0.0-beta.3</p> -->
+            <p style="text-align: right; flex: 1;"><img src="assets/img/icons/octicons/clock-24.svg" height="18" alt="Last updated"/> 22 Sep 2018</p>
+          </footer>
+      </article>
+    </div>
+  </div>
 </section>

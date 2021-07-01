@@ -27,39 +27,6 @@ header_h2: Welcome to my website!
 <section class="full_width_section bg-grad-orange">
   <div class="section_content">
     <div class="column">
-      <p>Test test test</p>
-    </div>
-    <div class="column">
-      <h2>Projects I've contributed to</h2>
-      <p>
-        <ul>
-          <li>Sonic Pi</li>
-        </ul>
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="full_width_section bg-grad-yellow">
-  <div class="section_content">
-    <div class="column">
-      <h2>Events I've participated in</h2>
-      <p>
-        <ul>
-          <li>Local Hack Day: Build & Share 2021</li>
-          <li>GMTK Game Jam 2021</li>
-        </ul>
-      </p>
-    </div>
-    <div class="column">
-      <img src="assets/img/drawings/stickers.png" width="100%" alt="Event Swag/Stickers"/>
-    </div>
-  </div>
-</section>
-
-<section class="full_width_section bg-grad-green">
-  <div class="section_content">
-    <div class="column">
       <!-- <p>Test test test</p> -->
     </div>
     <div class="column">
@@ -73,9 +40,9 @@ header_h2: Welcome to my website!
                     <h4>A package for the <a href='https://atom.io'>Atom text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)</h4>
                 </hgroup>
             </header>
-            <div class="card-content">
+            <main class="card-content">
               {{ include.content }}
-            </div>
+            </main>
             <hr/>
             <footer style="display: flex;">
               <p style="text-align: left; flex: 1;"><img src="assets/img/icons/octicons/versions-24.svg" height="18" alt="Latest version"/> 1.0.0-beta.3</p>
@@ -88,7 +55,7 @@ header_h2: Welcome to my website!
   </div>
 </section>
 
-<section class="full_width_section bg-grad-blue">
+<section class="full_width_section bg-grad-yellow">
   <div class="section_content">
     <div class="column">
       <h2>Games</h2>
@@ -120,6 +87,63 @@ header_h2: Welcome to my website!
   </div>
 </section>
 
+<section class="full_width_section bg-grad-green">
+  <div class="section_content">
+    <div class="column">
+      <!-- <p>Test test test</p> -->
+    </div>
+    <div class="column">
+      <h2>Projects I've contributed to</h2>
+      <p>
+        <!-- <ul>
+          <li>Sonic Pi</li>
+        </ul> -->
+        <details open>
+          <summary>Sonic Pi</summary>
+          <hr>
+          <div class="details_content">
+            <p>
+              Sonic Pi is a live coding and educational tool, created by Sam Aaron, that allows you to use Ruby to create music!
+              <br>You can check it out at <a href="https://sonic-pi.net" target="_blank">https://sonic-pi.net</a>.
+              <br>GitHub: <a href="https://github.com/sonic-pi-net/sonic-pi" target="_blank">https://github.com/sonic-pi-net/sonic-pi</a>.
+            </p>
+            <br>
+
+            <p>My main contributions include:</p>
+            <ul>
+              <li>
+                <p>Contributed to the build system (focusing on Linux). PR <a href="https://github.com/sonic-pi-net/sonic-pi/pull/2207/">#2207</a></p>
+              </li>
+              <li>
+                <p>Add an option to change the UI language. PR <a href="https://github.com/sonic-pi-net/sonic-pi/pull/2604">#2604</a></p>
+              </li>
+            </ul>
+            <p><a href="https://github.com/sonic-pi-net/sonic-pi/commits?author=SunderB">See all of my commits</a></p>
+          </div>
+        </details>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="full_width_section bg-grad-blue">
+  <div class="section_content">
+    <div class="column">
+      <h2>Events I've participated in</h2>
+      <p>
+        <ul>
+          <li>Local Hack Day: Build & Share 2021</li>
+          <li>GMTK Game Jam 2021</li>
+        </ul>
+      </p>
+    </div>
+    <div class="column">
+      <img src="assets/img/drawings/stickers.png" width="100%" alt="Event Swag/Stickers"/>
+    </div>
+  </div>
+</section>
+
+
 <!-- <section class="full_width_section bg-grad-purple">
   <div class="section_content">
     <div class="column">
@@ -132,17 +156,17 @@ header_h2: Welcome to my website!
   </div>
 </section> -->
 
-<section class="full_width_section bg-grad-blue">
+<section class="full_width_section bg-grad-purple">
   <div class="section_content">
+    <div class="column">
+      <img src="assets/img/drawings/speech-bubble.png" width="100%" alt="Speech bubble"/>
+    </div>
     <div class="column">
       <h2>Socials</h2>
       <ul>
         <p><img src="assets/img/logos/github.png" class="social-icon"/> GitHub: <a href="https://github.com/SunderB">@SunderB</a></p>
         <p><img src="assets/img/logos/twitter.png" class="social-icon"/> Twitter (rarely used): <a href="https://twitter.com/sunderb_">@SunderB_</a></p>
       </ul>
-    </div>
-    <div class="column">
-      <img src="assets/img/drawings/speech-bubble.png" width="100%" alt="Speech bubble"/>
     </div>
   </div>
 </section>
