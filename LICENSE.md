@@ -1,5 +1,5 @@
 # sunderb.github.io License
-All code and content is Copyright SunderB 2020 All Rights Reserved, unless otherwise stated.
+All code and content is Copyright SunderB 2022 All Rights Reserved, unless otherwise stated.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
