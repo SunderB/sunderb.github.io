@@ -2,6 +2,12 @@
     <header>
         <hgroup>
             <a href="{{ include.url }}"><h3>{{ include.title }}</h3></a>
+            {% if include.badges %}
+            {% assign badge_list = include.badges | split: "," %}
+            {% for badge in badge_list %}
+            <label class="badge">{{ badge }}</label>
+            {% endfor %}
+            {% endif %}
             <h4>{{ include.description }}</h4>
         </hgroup>
     </header>

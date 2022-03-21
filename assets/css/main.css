@@ -81,6 +81,15 @@ div.container {
     padding: 10px;
 }
 
+.badge {
+    border-radius: 3pt;
+    background-color: rgb(211, 211, 247);
+    color: rgb(66, 40, 151);
+    padding: 2pt 8pt;
+    margin: 0 8pt 0 0;
+    font-weight: 600;
+}
+
 /* Navigation bar */
 .navbar {
     text-align: center;
@@ -413,9 +422,9 @@ article footer{
     border-radius: 8px;
     overflow: hidden;
 }
-.card * {
+/* .card * {
   margin: 0;
-}
+} */
 .card header{
   padding: 10px 10px 15px 10px;
 }

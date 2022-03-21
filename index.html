@@ -31,26 +31,14 @@ header_h2: Welcome to my website!
     </div>
     <div class="column">
       <h2>Projects</h2>
-      <p>
-        <article class="card">
-            <header>
-                <hgroup>
-                    <a href="https://github.com/SunderB/sb-atom-sonic-pi"><h3>sb-atom-sonic-pi</h3></a>
-                    <label>atom</label>
-                    <h4>A package for the <a href='https://atom.io'>Atom text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)</h4>
-                </hgroup>
-            </header>
-            <main class="card-content">
-              {{ include.content }}
-            </main>
-            <hr/>
-            <footer style="display: flex;">
-              <p style="text-align: left; flex: 1;"><img src="assets/img/icons/octicons/versions-24.svg" height="18" alt="Latest version"/> 1.0.0-beta.3</p>
-              <p style="text-align: right; flex: 1;"><img src="assets/img/icons/octicons/clock-24.svg" height="18" alt="Last updated"/> 31 Jan 2021</p>
-            </footer>
-        </article>
-
-      </p>
+      {% include card_software.html 
+        title="sb-atom-sonic-pi" 
+        url="https://github.com/SunderB/sb-atom-sonic-pi" 
+        description="A package for the <a href='https://atom.io'>Atom text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)"
+        latest_version="1.0.0-beta.3"
+        last_updated="31 Jan 2021"
+        badges="atom,sonic-pi"   
+      %}
     </div>
   </div>
 </section>
