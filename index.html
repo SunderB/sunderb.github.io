@@ -17,9 +17,7 @@ header_h2: Welcome to my website!
       <p>Hi! My name's Sunder.<br> I'm a student who's interested in: tinkering with tech and computers 💻, music 🎵, and games 🎮 :)</p>
     </div>
     <div class="column no_vert_margin">
-      <p>
-      <img src="assets/img/drawings/waving.png" alt="Me waving" style="width: 60%;"/>
-    </p>
+      <img src="assets/img/drawings/waving.png" alt="Me waving" style="display: block; width: 60%;"/>
     </div>
   </div>
 </section>
@@ -47,8 +45,22 @@ header_h2: Welcome to my website!
   <div class="section_content">
     <div class="column">
       <h2>Games</h2>
-      {% include card_software.html title="🎮 Asteroids" url="/games/asteroids" description="A little asteroids game made in Game Maker." latest_version="16w46a" last_updated="14 Nov 2016" %}
-      {% include card_software.html title="🎮 Do you want to build a snowman?" url="https://sunderb.itch.io/do-you-want-to-build-a-snowman" description="A prototype game about building snowmen. GMTK Game Jame 2021 submission." latest_version="0.0.1" last_updated="14 Jun 2021" %}
+      {% include card_software.html
+        title="🎮 Asteroids"
+        url="/games/asteroids"
+        description="A little asteroids game made in Game Maker."
+        latest_version="16w46a"
+        last_updated="14 Nov 2016"
+        badges="arcade,game-maker"
+      %}
+      {% include card_software.html
+        title="🎮 Do you want to build a snowman?"
+        url="https://sunderb.itch.io/do-you-want-to-build-a-snowman"
+        description="A prototype game about building snowmen. GMTK Game Jame 2021 submission."
+        latest_version="0.0.1"
+        last_updated="14 Jun 2021"
+        badges="game-jam,puzzle,prototype,godot"
+      %}
     </div>
     <div class="column">
       <!-- Intentionally blank -->
