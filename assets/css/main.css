@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@400;500;600;700&family=Source+Sans+Pro:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @import url("colours.css");
 
@@ -16,11 +17,14 @@
   --content-max-width: 1200px;
 }
 
-
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body :not(script) {
+    
 }
 h1{
     font-family: 'Raleway', sans-serif;
@@ -28,7 +32,7 @@ h1{
 }
 h2,h3,h4,p,a,details{
     /* font-family: 'Roboto', sans-serif; */
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 4px 0px;
 }
 h2{
@@ -50,6 +54,7 @@ h4{
 }
 p{
     font-weight:500;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* unvisited link */
@@ -63,12 +68,12 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: grey;
+    color: rgb(51, 51, 51);
 }
 
 /* selected link */
 a:active {
-    color: grey;
+    color: rgb(14, 9, 44);
 }
 
 div.header h1 {
@@ -80,7 +85,6 @@ div.header h1 {
 div.container {
     padding: 10px;
 }
-
 .badge {
     border-radius: 3pt;
     background-color: rgb(211, 211, 247);
@@ -88,6 +92,7 @@ div.container {
     padding: 2pt 8pt;
     margin: 0 8pt 0 0;
     font-weight: 600;
+    font-size: 11pt;
 }
 
 /* Navigation bar */
@@ -169,35 +174,34 @@ div.container {
     color: cyan;
 }
 */
-#box {
+.button {
     display: block;
-    width: 200px;
+    width: 250px;
     margin: 50px auto;
     padding: 15px;
     text-align: center;
-    border: 1px solid blue;
-    background: cyan;
+    border-radius: 8pt;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+    background: rgb(1, 4, 32);
 }
-#box a{
-    font: bold 14px Tahoma;
-}
-#box a:link {
+.button:link {
     color: white;
 }
-
 /* visited link */
-#box a:visited {
+.button:visited {
     color: white;
 }
-
 /* mouse over link */
-#box a:hover {
-    color: blue;
+.button:hover {
+    color: rgb(133, 174, 252);
 }
-
 /* selected link */
-#box a:active {
-    color: blue;
+.button:active {
+    color: rgb(77, 77, 155);
 }
 header,section,footer,aside,nav,article,hgroup{
     display: block;
@@ -353,7 +357,7 @@ textarea{
 
 .section_content > .column.no_vert_margin {
   flex: 1;
-  margin-bottom: -16px; /* This feels a bit hacky */
+  /* margin-bottom: -16px; This feels a bit hacky */
   padding-bottom: 0px;
 }
 
@@ -365,16 +369,16 @@ textarea{
 }
 
 .section_content :is(p,summary), .section_content :is(p,summary) * {
-  font-family: 'Indie Flower', cursive;
-  font-weight: bold;
-  font-size: 18pt;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
 }
 
 .section_content li {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  list-style: circle;
-  font-size: 18pt;
+  list-style: disc;
+  font-size: 14pt;
   margin-left: 20px;
 }
 
@@ -429,16 +433,23 @@ article footer{
   padding: 10px 10px 15px 10px;
 }
 .card :is(h3,h4), .card :is(h3,h4) a{
-  font-family: "DM Mono", monospace;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.card h4 {
+    font-weight: 600;
+}
+
 .card main {
   margin: 16px;
 }
-.card footer{
+.card footer {
   text-align: right;
   margin: 0;
   padding: 5px 10px;
   background: #a3f2ff;
+  font-size: 16pt;
+  font-weight: 400;
 }
 
 details {
@@ -451,7 +462,7 @@ details hr {
   margin-top: 8px;
 }
 details .details_content {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 8px;
 }
 details summary {
