@@ -1,0 +1,50 @@
+/* Buttons */
+
+.button {
+    display: block;
+    width: 250px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8pt;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+    background: hsl(210, 100%, 60%)
+}
+.button:link, .button:visited { color: white; }
+.button:hover {
+    color: rgb(133, 174, 252);
+    background: hsl(210, 100%, 55%);
+}
+.button:active {
+    color: rgb(133, 174, 252);
+    border: 2px solid  hsla(210, 100%, 55%, 0.5);
+}
+
+/* Utility classes for setting certain properties */
+.no_resize {
+    resize: none;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+.container_vertical_centre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container_horizontal_centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_grid_2col {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
