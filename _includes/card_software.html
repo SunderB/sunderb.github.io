@@ -1,24 +1,26 @@
-<article class="card">
+<article class="card" style="display: flex; flex-direction: column;">
     <header>
         <hgroup>
-            <a href="{{ include.url }}"><h3>{{ include.title }}</h3></a>
+            <a href="{{ include.url }}"><h4>{{ include.title }}</h4></a>
             {% if include.badges %}
             {% assign badge_list = include.badges | split: "," %}
             {% for badge in badge_list %}
             <label class="badge">{{ badge }}</label>
             {% endfor %}
             {% endif %}
-            <h4>{{ include.description }}</h4>
+            <p>{{ include.description }}</p>
         </hgroup>
     </header>
-    <div class="card-content">
-      {{ include.content }}
+    <div class="card-content" style="flex-grow: 1;">
+        {{ include.content }}
     </div>
-    <hr/>
-    <footer style="display: flex;">
-      {% if include.latest_version %}
-      <p style="text-align: left; flex: 1;"><img src="assets/img/icons/octicons/versions-24.svg" alt="latest version" height="18"/> {{ include.latest_version }}</p>
-      {% endif %}
-      <p style="text-align: right; flex: 1;"><img src="assets/img/icons/octicons/clock-24.svg" alt="last updated" height="18"/> {{ include.last_updated }}</p>
+    <footer>
+        <hr>
+        <div class="card_footer" style="display: flex;">
+            {% if include.latest_version %}
+            <p style="text-align: left; flex: 1;"><img src="assets/img/icons/octicons/versions-24.svg" alt="latest version" height="18"/> {{ include.latest_version }}</p>
+            {% endif %}
+            <p style="text-align: right; flex: 1;"><img src="assets/img/icons/octicons/clock-24.svg" alt="last updated" height="18"/> {{ include.last_updated }}</p>
+        </div>
     </footer>
 </article>
