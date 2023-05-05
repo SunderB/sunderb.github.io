@@ -8,6 +8,7 @@ header_picture_name: blue gradient
 header_h1: Hi there!
 header_h2: Welcome to my website!
 ---
+<script src="assets/js/event_stickers.js"></script>
 
 <section class="full_width_section bg-grad-blue">
   <div class="section_content">
@@ -110,15 +111,47 @@ header_h2: Welcome to my website!
   <div class="section_content">
     <div class="column">
       <h2>Events I've participated in</h2>
-      <p>
-        <ul>
-          <li>Local Hack Day: Build & Share 2021</li>
-          <li>GMTK Game Jam 2021</li>
-        </ul>
-      </p>
+      <div class="hex-grid" id="event_stickers">
+        {% capture iterations %}{{ site.data.events | size | divided_by: 4 }}{% endcapture %}
+        {% for row in (0..iterations) %}
+          {% assign a = row | modulus: 2 %}
+          {% if a == 1 %}
+            {% assign class = "btn offset" %}
+          {% else %}
+            {% assign class = "btn" %}
+          {% endif %}
+
+          {% for item in site.data.events limit: 4 offset: continue %}
+          <!-- onclick="show_event("{{item.name | replace: " ", "" }})" -->
+            <a class="{{class}}" onclick="show_event_details(`event_{{item.name | replace: ' ', '' }}`)" target="_self">
+              <img src="{{item.sticker}}" alt="{{item.name}}" width="100%">
+            </a>
+          {% endfor %}
+        {% endfor %}
+        <!-- <a class="btn">Call call</a>
+        <a class="btn">Call call</a>
+        <a class="btn">Call call</a>
+        <a class="btn">Call call</a>
+        <a class="btn offset">Call call</a>
+        <a class="btn offset">Call call</a>
+        <a class="btn offset">Call call</a>
+        <a class="btn offset">Call call</a>
+        <a class="btn">Call call</a>
+        <a class="btn">Call call</a>
+        <a class="btn">Call call</a>
+        <a class="btn">Call call</a>   -->
+      </div>
     </div>
-    <div class="column">
-      <img src="assets/img/drawings/stickers.png" width="100%" alt="Event Swag/Stickers"/>
+    <div class="column" id="event_details">
+      {% for event in site.data.events %}
+      <details id="event_{{event.name | replace: " ", "" }}">
+        <summary>{{ event.name }}</summary>
+        <hr>
+        <div class="details_content">
+          <p>{{ event.description }}</p>
+        </div>
+      </details>
+      {% endfor %}
     </div>
   </div>
 </section>

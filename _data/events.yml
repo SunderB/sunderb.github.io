@@ -1,0 +1,43 @@
+- name: HackSheffield 7
+  date: 5th-6th Nov 2022
+  sticker: assets/img/event_stickers/hack_sheffield_7.png
+  description: Test
+
+- name: GitHub Field Day UK 2022
+  date: 30th Jul 2022
+  sticker: assets/img/event_stickers/github_field_day.png
+  description: I went down to London for GitHub Field Day 2022.
+
+- name: MLH Global Hack Week INIT 2023
+  date: Jul 2022
+  sticker: assets/img/event_stickers/ghw_init_2023.png
+  description: Test
+
+- name: MLH Global Hack Week Share 2022
+  sticker: assets/img/event_stickers/ghw_share_2022.png
+  description: Test
+
+- name: MLH INIT 2022
+  date: Jun-Jul 2021
+  sticker: assets/img/stickers/hacksheffield7.png
+  description: Test
+
+- name: GMTK Game Jam 2021
+  date: 11th-12th Jun 2021
+  sticker: assets/img/event_stickers/gmtk_game_jam_2021.png
+  description: Test
+  
+- name: MLH Local Hack Day Share 2021
+  date: Mar-Apr 2021
+  sticker: assets/img/stickers/hacksheffield7.png
+  description: Test
+
+- name: MLH Local Hack Day Build 2021
+  date: Jan 2021
+  sticker: assets/img/stickers/hacksheffield7.png
+  description: Test
+
+- name: NotUniversity Hacks (2020)
+  date: 6th-7th Jun 2020
+  sticker: assets/img/event_stickers/notuniversity_hacks.png
+  description: Test
