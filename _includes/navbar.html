@@ -1,19 +1,25 @@
-<div id="top_bar">
-    <nav class="navbar">
-        <ul>
-            <li>
-                <!-- <header id="top_header" > -->
-                  <!-- <img src="https://avatars3.githubusercontent.com/u/20426079?s=400" alt="GitHub Avatar" id="github-avatar-pic"/> -->
-                  <a href="{{ site.url }}{{ site.baseurl }}" target="_self"> <!-- style="float: left; padding-top: 16px; padding-bottom: 8px; margin-top: -32px;" -->
-                    <h2>SunderB</h2>
-                    <!-- style="margin: 0px;" -->
-                  </a>
-                <!-- </header> -->
-            </li>
+<header id="top_bar">
+    <nav id="side_menu" class="sidenav">
+        <a aria-label="close side menu" href="javascript:void(0)" target="_self" class="closebtn" onclick="close_side_menu()">&times;</a>
+        <ul class="navlinks">
             <li><a href="{{ site.url }}{{ site.baseurl }}" target="_self">Home</a></li>
             <li><a href="{{ site.url }}{{ site.baseurl }}/games" target="_self">Games</a></li>
             <li><a href="{{ site.url }}{{ site.baseurl }}/projects" target="_self">Projects</a></li>
             <li><a href="{{ site.url }}{{ site.baseurl }}/repos" target="_self">Repositories</a></li>
         </ul>
     </nav>
-</div>
+    <nav class="navbar">
+        <a aria-label="open side menu" href="javascript:void(0)" target="_self" class="menu_button" onclick="open_side_menu()">
+            <img alt="list icon" src="assets/img/icons/bootstrap/list.svg" width="24px"/>
+        </a>
+        <a href="{{ site.url }}{{ site.baseurl }}" target="_self"> <!-- style="float: left; padding-top: 16px; padding-bottom: 8px; margin-top: -32px;" -->
+            <h2>SunderB</h2>
+        </a>
+        <ul class="navlinks">
+            <li><a href="{{ site.url }}{{ site.baseurl }}" target="_self">Home</a></li>
+            <li><a href="{{ site.url }}{{ site.baseurl }}/games" target="_self">Games</a></li>
+            <li><a href="{{ site.url }}{{ site.baseurl }}/projects" target="_self">Projects</a></li>
+            <li><a href="{{ site.url }}{{ site.baseurl }}/repos" target="_self">Repositories</a></li>
+        </ul>
+    </nav>
+</header>

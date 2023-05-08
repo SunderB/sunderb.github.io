@@ -123,7 +123,7 @@ header_h2: Welcome to my website!
 
           {% for item in site.data.events limit: 4 offset: continue %}
           <!-- onclick="show_event("{{item.name | replace: " ", "" }})" -->
-            <a class="{{class}}" onclick="show_event_details(`event_{{item.name | replace: ' ', '' }}`)" target="_self">
+            <a data-event-id="event_{{item.name | replace: ' ', '' }}" tabindex="0" class="{{class}}" onkeydown="show_event_details(event)" onclick="show_event_details(event)" target="_self">
               <img src="{{item.sticker}}" alt="{{item.name}}" width="100%">
             </a>
           {% endfor %}
@@ -144,7 +144,7 @@ header_h2: Welcome to my website!
     </div>
     <div class="column" id="event_details">
       {% for event in site.data.events %}
-      <details id="event_{{event.name | replace: " ", "" }}">
+      <details aria-label="{{ event.name }}" id="event_{{event.name | replace: " ", "" }}">
         <summary>{{ event.name }}</summary>
         <hr>
         <div class="details_content">
@@ -177,8 +177,8 @@ header_h2: Welcome to my website!
     <div class="column">
       <h2>Socials</h2>
       <ul>
-        <p><img src="assets/img/logos/github.png" class="social-icon"/> GitHub: <a href="https://github.com/SunderB">@SunderB</a></p>
-        <p><img src="assets/img/logos/twitter.png" class="social-icon"/> Twitter (rarely used): <a href="https://twitter.com/sunderb_">@SunderB_</a></p>
+        <p><img alt="Github logo" src="assets/img/logos/github.png" class="social-icon"/> GitHub: <a href="https://github.com/SunderB">@SunderB</a></p>
+        <p><img alt="Twitter logo" src="assets/img/logos/twitter.png" class="social-icon"/> Twitter (rarely used): <a href="https://twitter.com/sunderb_">@SunderB_</a></p>
       </ul>
     </div>
   </div>

@@ -5,7 +5,7 @@
             {% if include.badges %}
             {% assign badge_list = include.badges | split: "," %}
             {% for badge in badge_list %}
-            <label class="badge">{{ badge }}</label>
+            <label class="badge_small">{{ badge }}</label>
             {% endfor %}
             {% endif %}
             <p>{{ include.description }}</p>

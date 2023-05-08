@@ -4,28 +4,15 @@ Copyright SunderB All Rights Reserved (unless otherwise stated)
 See LICENSE.md for full license (https://github.com/SunderB/sunderb.github.io/blob/master/LICENSE.md)
 -->
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     {% include head.html %}
 </head>
-<style>
-</style>
 <body>
-
     {% include navbar.html %}
 
-    <div id="main_wrapper" class="{{ page.main_class }}">
-        {% if page.header == "picture" %}
-            {% include picture_header.html %}
-        {% endif %}
-
-        <main id="content">
-            {% if page.header == "text" %}
-                {% include text_header.html %}
-            {% endif %}
-
-            {{ content }}
-        </main>
+    <div id="main_content" class="{{ page.main_class }}">
+        {{ content }}
     </div>
 
     {% include footer.html %}

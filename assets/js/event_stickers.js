@@ -7,11 +7,15 @@ function hide_other_events(event_id) {
         }
     }
 }
-function show_event_details(event_id) {
-    hide_other_events(event_id)
+function show_event_details(event) {
+    if (typeof event.key !== "undefined" && event.key != " " && event.key != "Enter") {
+        return;
+    }
+    let event_id = event.currentTarget.dataset.eventId;
+    hide_other_events(event_id);
     let details_element = document.getElementById(event_id);
     details_element.open = true;
-    details_element.scrollIntoView({behavior: "smooth", block: "center"})
+    details_element.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function add_event_handlers() {
