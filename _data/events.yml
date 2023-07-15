@@ -29,7 +29,7 @@
 
 - name: MLH INIT 2022
   date: Jun-Jul 2021
-  sticker: assets/img/stickers/mlh_init_2022.png
+  sticker: assets/img/event_stickers/ghw_init_2023.png
   description: |
     To <em>initialise</em> the new season, I made <a href="https://sunderb.me/mlh-init-2022/mascot-generator.html">a website to predict the next MLH mascot.</a> It had the right options to produce pretty much the right answer!
     (The lists of names, animals and computer jargon were taken from Wikipedia.)
@@ -55,12 +55,12 @@
 
 - name: MLH Local Hack Day Share 2021
   date: Mar-Apr 2021
-  sticker: assets/img/stickers/hacksheffield7.png
+  sticker: assets/img/event_stickers/local_hack_day.png
   description: <em>Description to be completed</em>
 
 - name: MLH Local Hack Day Build 2021
   date: Jan 2021
-  sticker: assets/img/stickers/hacksheffield7.png
+  sticker: assets/img/event_stickers/local_hack_day.png
   description: <em>Description to be completed</em>
 
 - name: NotUniversity Hacks (2020)
