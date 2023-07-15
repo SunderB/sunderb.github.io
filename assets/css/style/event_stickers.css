@@ -1,5 +1,6 @@
 #event_stickers {
     overflow: scroll;
+    padding: 8px;
 }
 .hexagon {
     position: relative;
