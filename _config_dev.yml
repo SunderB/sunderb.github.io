@@ -11,3 +11,8 @@ gems:
 
 baseurl: ""
 url: http://127.0.0.1:4000 # for local testing
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title:output_ext

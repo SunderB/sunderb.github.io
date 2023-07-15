@@ -1,7 +1,7 @@
 github: [metadata]
 kramdown:
- input: GFM
- hard_wrap: false
+  input: GFM
+  hard_wrap: false
 permalink: /:title
 gems:
    - jekyll-coffeescript
@@ -11,4 +11,8 @@ gems:
 
 baseurl: ""
 url: "https://sunderb.me"
-#url: http://127.0.0.1:4000 # for local testing
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title:output_ext
