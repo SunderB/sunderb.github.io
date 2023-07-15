@@ -1,43 +1,71 @@
-- name: HackSheffield 7
+- name: HackSheffield 7 (Nov 2022)
   date: 5th-6th Nov 2022
   sticker: assets/img/event_stickers/hack_sheffield_7.png
-  description: Test
+  description: |
+    Me and two other people created a banking & budgeting website to help students to manage their money.
+    It shows recent transactions, personal account details ans a breakdown chart of your spending by category.
+    I worked on the Python back-end helping with interfacing with the Capital One API. I also helped to make the personal details appear on the website, as well as make a somewhat functional email form.
+    I also tested SMS messaging using Twilio and wanted to create spending and budget alerts, but we ran out of time to implement this.
+    <br><br>
+    This was the first in-person hackathon I had attended. I learned that rapidly collaborating as a group on a programming project is difficult without a set plan, having to leave for a chunk of time isn't ideal, and that you should set goals that are achievable during the hackathon.
+    <br><br>
+    For more details see the <a href="https://devpost.com/software/banking-budgeting-website">Devpost submission.</a>
+
 
 - name: GitHub Field Day UK 2022
   date: 30th Jul 2022
   sticker: assets/img/event_stickers/github_field_day.png
-  description: I went down to London for GitHub Field Day 2022.
+  description: <em>Description to be completed</em>
 
 - name: MLH Global Hack Week INIT 2023
   date: Jul 2022
   sticker: assets/img/event_stickers/ghw_init_2023.png
-  description: Test
+  description: <em>Description to be completed</em>
 
 - name: MLH Global Hack Week Share 2022
   sticker: assets/img/event_stickers/ghw_share_2022.png
-  description: Test
+  description: |
+    I made a <a href="https://sunderb.me/mlh-ghw-share-2022/morse-code">morse code encoder/decoder</a> for one of the challenges. It even converts unicode characters (using an ascii representation of the character code).
 
 - name: MLH INIT 2022
   date: Jun-Jul 2021
-  sticker: assets/img/stickers/hacksheffield7.png
-  description: Test
+  sticker: assets/img/stickers/mlh_init_2022.png
+  description: |
+    To <em>initialise</em> the new season, I made <a href="https://sunderb.me/mlh-init-2022/mascot-generator.html">a website to predict the next MLH mascot.</a> It had the right options to produce pretty much the right answer!
+    (The lists of names, animals and computer jargon were taken from Wikipedia.)
 
 - name: GMTK Game Jam 2021
   date: 11th-12th Jun 2021
   sticker: assets/img/event_stickers/gmtk_game_jam_2021.png
-  description: Test
-  
+  description: |
+    For the theme "joined together", I created a simple snowman building game called "Do you want to build a snowman?"
+    (great name I know).
+    The main concept is to roll snowballs and join them together to create snowmen.
+    You can only add a snowball that's smaller than the top snowball of the snowman
+    and snowballs get larger as you roll them over snow (like in real life!).
+    <br><br>
+    I was trying to incorporate these mechanics into a puzzle game where you had to account
+    for the size of each snowball to try to assemble the snowman in the correct order.
+    I unfortunately ran out of time before being able to design a first level or
+    implement any sounds or ui, but I'm happy to have got a working prototype.
+    <br><br>
+    If I'm bored and have time someday, I might try finishing a first level and see if it's any fun. :P
+    <br><br>
+    You can play the prototype online and view the submission on <a href="https://sunderb.itch.io/do-you-want-to-build-a-snowman">the game's itch.io page.</a>
+
 - name: MLH Local Hack Day Share 2021
   date: Mar-Apr 2021
   sticker: assets/img/stickers/hacksheffield7.png
-  description: Test
+  description: <em>Description to be completed</em>
 
 - name: MLH Local Hack Day Build 2021
   date: Jan 2021
   sticker: assets/img/stickers/hacksheffield7.png
-  description: Test
+  description: <em>Description to be completed</em>
 
 - name: NotUniversity Hacks (2020)
   date: 6th-7th Jun 2020
   sticker: assets/img/event_stickers/notuniversity_hacks.png
-  description: Test
+  description: |
+    I made a prototype of a community hub website where people could find local news, annoucements, resources and support.
+    See the <a href="https://devpost.com/software/community-hub-website-05qkz3">Devpost submission</a> for more information.
