@@ -202,7 +202,7 @@ details summary {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1; /* Show on top of other elements */
+    z-index: 100; /* Show on top of other elements */
 }
 .navbar {
     text-align: center;
