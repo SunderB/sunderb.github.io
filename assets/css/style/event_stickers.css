@@ -88,6 +88,7 @@
 .btn.offset:hover, .btn.offset:focus { 
     height: calc(1.1*(2*var(--a) + var(--l)));
     width: calc(1.1*var(--width));
+    z-index: 10;
     clip-path: polygon(
     0% calc(1.1*var(--a)), 
     0% calc(1.1*(var(--a) + var(--l))), 
@@ -97,4 +98,21 @@
     50% 0
     );
     transform: translateX(calc(-0.05*var(--width) + var(--width)/2)) translateY(calc(-0.05*(2*var(--a) + var(--l))));
+}
+
+.btn:hover, .btn.offset:hover {
+    z-index: 15;
+}
+
+/* Responsiveness for small screens */
+@media screen and (max-width: 1280px) {
+    :root {
+        --width: calc(50vw/5);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --width: calc(100vw/5);
+    }
 }
