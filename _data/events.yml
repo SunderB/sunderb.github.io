@@ -1,4 +1,4 @@
-- name: HackSheffield 7 (Nov 2022)
+- name: HackSheffield 7 (2022)
   date: 5th-6th Nov 2022
   sticker: assets/img/event_stickers/hack_sheffield_7.png
   description: |
@@ -15,7 +15,12 @@
 - name: GitHub Field Day UK 2022
   date: 30th Jul 2022
   sticker: assets/img/event_stickers/github_field_day.png
-  description: <em>Description to be completed</em>
+  description: |
+    I attended GitHub Field Day 2022 in London.
+    We discussed topics around building and maintaining a healthy community & planning and running hackathons.
+    As someone who hasn't organised hackathons before, it was very interesting to learn about.
+    During the event I met a bunch of great people from many places in real life.
+    As my first in-person hacker community event, it was a great experience.
 
 - name: MLH Global Hack Week INIT 2023
   date: Jul 2022
@@ -23,6 +28,7 @@
   description: <em>Description to be completed</em>
 
 - name: MLH Global Hack Week Share 2022
+  date: Apr 2022
   sticker: assets/img/event_stickers/ghw_share_2022.png
   description: |
     I made a <a href="https://sunderb.me/mlh-ghw-share-2022/morse-code">morse code encoder/decoder</a> for one of the challenges. It even converts unicode characters (using an ascii representation of the character code).
