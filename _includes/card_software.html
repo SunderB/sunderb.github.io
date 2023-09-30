@@ -1,4 +1,13 @@
 <article class="card" style="display: flex; flex-direction: column;">
+    
+    <picture>
+        {% if include.img %}
+        <img src="{{ include.img }}" alt="{{ include.img_alt }}">
+        {% else %}
+        <img src="assets/img/card_placeholder_code.png" alt="placeholder image">
+        {% endif %}
+    </picture>
+    
     <header>
         <hgroup>
             <a href="{{ include.url }}"><h4>{{ include.title }}</h4></a>

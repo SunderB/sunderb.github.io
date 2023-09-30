@@ -181,6 +181,13 @@ details summary {
     border-radius: 8px;
     overflow: hidden;
 }
+.card > picture {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+.card > picture > img { flex-grow: 1; width: 100%; }
 .card header                            { padding: 10px 10px 15px 10px; }
 .card :is(h3,h4), .card :is(h3,h4) a    { font-family: var(--content-font); }
 .card h4                                { font-weight: 600; }
@@ -322,14 +329,20 @@ details summary {
     width: 100%;
 }
 .full_width_section > header {
+    max-width: var(--content-max-width);
+    margin: auto;
     text-align: center;
-    padding: 16pt 0px;
+    padding: 16pt 16px 0;
+    box-sizing: border-box;
 }
 .full_width_section > .section_content {
     max-width: var(--content-max-width);
     margin: auto;
     text-align: left;
     display: flex;
+    /* grid-template-columns: 50% 50%; */
+    /* min-height: 0; */
+    /* min-width: 0; */
     flex-direction: row;
 }
 .section_content > .column {
@@ -339,7 +352,7 @@ details summary {
     padding-bottom: 16px;
 }
 .section_content > .column.no_vert_margin {
-    flex: 1;
+    /* flex: 1; */
     /* margin-bottom: -16px; This feels a bit hacky */
     padding-bottom: 0px;
 }
@@ -354,6 +367,19 @@ details summary {
     list-style: disc;
     font-size: var(--content-font-size);
     margin-left: 20px;
+}
+
+.card_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 0;
+    min-width: 0;
+    row-gap: 16px;
+}
+.card_grid > .card {
+    margin: 0px 16px;
+    overflow: hidden;
+    min-width: 0;
 }
 
 /* Social icons */
@@ -388,7 +414,7 @@ details summary {
     .full_width_section .section_content {
         flex-direction: column;
     }
-    .container_grid_2col {
+    .card_grid, .grid_2col {
         grid-template-columns: 100%;
     }
 }

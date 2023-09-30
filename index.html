@@ -26,28 +26,47 @@ header_h2: Welcome to my website!
 </section>
 
 <section class="full_width_section bg-grad-orange">
+  <header class="align_left">
+    <h2>Featured Projects</h2>
+  </header>
   <div class="section_content">
-    <div class="column">
-      <!-- Intentionally blank -->
-    </div>
-    <div class="column">
-      <h2>Projects</h2>
+    <div class="column card_grid">
       {% include card_software.html 
         title="sb-atom-sonic-pi" 
         url="https://github.com/SunderB/sb-atom-sonic-pi" 
-        description="A package for the <a href='https://pulsar-edit.dev/'>Pulsar text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)"
+        description="A package for the <a href='https://pulsar-edit.dev/'>Pulsar text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>."
         latest_version="0.2.3"
         last_updated="26 Dec 2022"
         badges="pulsar-edit,atom,sonic-pi"
+      %}
+      {% include card_software.html 
+        title="Cluster Tool" 
+        img="assets/img/projects/cluster-tool.png"
+        img_alt="A graph of an n-body simulation, with the stars coloured according to their INDICATE index."
+        url="https://github.com/SunderB/cluster-tool" 
+        description="A script for analysing clusters in n-body simulations."
+        last_updated="24 Aug 2023"
+        badges="astronomy,clustering,physics"
+      %}
+      {% include card_software.html 
+        title="Sonic Pi Documentation Website" 
+        img="assets/img/projects/sonic-pi-phoenix-website.png"
+        img_alt="Screenshot of a samples documentation page."
+        url="https://github.com/SunderB/sonic-pi-phoenix-website" 
+        description="WIP Phoenix website for the <a href='https://sonic-pi.net'>Sonic Pi</a> documentation. In collaboration with <a href='https://github.com/ethancrawford'>Ethan Crawford</a> and <a href='https://github.com/samaaron'>Sam Aaron</a>"
+        last_updated="Jun 13 2023"
+        badges="documentation,phoenix,elixir,sonic-pi"
       %}
     </div>
   </div>
 </section>
 
 <section class="full_width_section bg-grad-yellow">
+  <header class="align_left">
+    <h2>Games</h2>
+  </header>
   <div class="section_content">
-    <div class="column">
-      <h2>Games</h2>
+    <div class="column card_grid">
       {% include card_software.html
         title="🎮 Asteroids"
         url="/games/asteroids"
@@ -57,6 +76,8 @@ header_h2: Welcome to my website!
         badges="arcade,game-maker"
       %}
       {% include card_software.html
+        img="assets/img/projects/do-you-want-to-build-a-snowman.png"
+        img_alt="Screenshot of the game."
         title="🎮 Do you want to build a snowman?"
         url="https://sunderb.itch.io/do-you-want-to-build-a-snowman"
         description="A prototype game about building snowmen. GMTK Game Jame 2021 submission."
@@ -65,19 +86,15 @@ header_h2: Welcome to my website!
         badges="game-jam,puzzle,prototype,godot"
       %}
     </div>
-    <div class="column">
-      <!-- Intentionally blank -->
-    </div>
   </div>
 </section>
 
 <section class="full_width_section bg-grad-green">
+  <header class="align_left">
+    <h2>Projects I've contributed to</h2>
+  </header>
   <div class="section_content">
     <div class="column">
-      <!-- Intentionally blank -->
-    </div>
-    <div class="column">
-      <h2>Projects I've contributed to</h2>
       <p>
         <details open>
           <summary>Sonic Pi</summary>
@@ -103,6 +120,9 @@ header_h2: Welcome to my website!
           </div>
         </details>
       </p>
+    </div>
+    <div class="column">
+      <!-- Intentionally blank -->
     </div>
   </div>
 </section>

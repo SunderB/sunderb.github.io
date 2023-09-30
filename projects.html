@@ -9,16 +9,33 @@ main_class: bg-grad-orange
     <h1>Projects</h1>
   </header>
   <div class="section_content">
-    <div class="column container_grid_2col">
+    <div class="column card_grid">
       {% include card_software.html 
         title="sb-atom-sonic-pi" 
         url="https://github.com/SunderB/sb-atom-sonic-pi" 
-        description="A package for the <a href='https://atom.io'>Atom text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>. (May not be regularly maintained!)"
-        latest_version="1.0.0-beta.3"
-        last_updated="31 Jan 2021"
-        badges="atom,sonic-pi"   
+        description="A package for the <a href='https://pulsar-edit.dev/'>Pulsar text editor</a> to interface with <a href='https://sonic-pi.net'>Sonic Pi</a>. Based on <a href='https://github.com/rkh/atom-sonic'>rkh/atom-sonic</a>."
+        latest_version="0.2.3"
+        last_updated="26 Dec 2022"
+        badges="pulsar-edit,atom,sonic-pi"
       %}
-
+      {% include card_software.html 
+        title="Cluster Tool" 
+        img="assets/img/projects/cluster-tool.png"
+        img_alt="A graph of an n-body simulation, with the stars coloured according to their INDICATE index."
+        url="https://github.com/SunderB/cluster-tool" 
+        description="A script for analysing clusters in n-body simulations."
+        last_updated="24 Aug 2023"
+        badges="astronomy,clustering,physics"
+      %}
+      {% include card_software.html 
+        title="Sonic Pi Documentation Website" 
+        img="assets/img/projects/sonic-pi-phoenix-website.png"
+        img_alt="Screenshot of a samples documentation page."
+        url="https://github.com/SunderB/sonic-pi-phoenix-website" 
+        description="WIP Phoenix website for the <a href='https://sonic-pi.net'>Sonic Pi</a> documentation. In collaboration with <a href='https://github.com/ethancrawford'>Ethan Crawford</a> and <a href='https://github.com/samaaron'>Sam Aaron</a>"
+        last_updated="Jun 13 2023"
+        badges="documentation,phoenix,elixir,sonic-pi"
+      %}
       {% include card_software.html 
         title="Kindle Fire Firmware Download List" 
         url="https://github.com/SunderB/kindlefirmwarelist" 
