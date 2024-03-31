@@ -7,7 +7,7 @@
 
 :root {
     /* --content-font: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-    --heading-font: 'Livvic', sans-serif;
+    --heading-font: 'Inter', sans-serif;
     --content-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --footer-font:  "DM Mono", monospace;
 
@@ -29,14 +29,14 @@
     --article-max-width: 800px;
     --content-max-width: 1250px;
 
-    --colour-main:          33, 188, 255; /* rgb(33, 188, 255)*/
+    --colour-main:          128, 217, 255; /*  77, 201, 255; rgb(33, 188, 255) */
     --colour-accent:        26, 140, 255;
     --colour-accent-hsl:    210, 100%, 55%;
     --colour-background:    255, 255, 255;
     --colour-badge:         211, 211, 247;
     --colour-badge-text:    66, 40, 151;
     --colour-card-footer:   163, 242, 255;
-    --colour-nav-hover:     51, 51, 51;
+    --colour-nav-hover:     0, 54, 77;
     --colour-text:          0, 0, 0;
     --colour-text-dull:     51, 51, 51;
     --colour-block-background: 238, 238, 238;
