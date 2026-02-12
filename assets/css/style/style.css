@@ -23,7 +23,7 @@
     --navbar-vertical-padding: 24px;
     --navbar-height: calc(var(--navbar-font-size) + 2*var(--navbar-vertical-padding) + 2px);
 
-    --footer-height: 60px;
+    --footer-height: 5em;
     --footer-vertical-padding: 20px;
 
     --article-max-width: 800px;
