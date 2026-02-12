@@ -11,26 +11,26 @@ See LICENSE.md for full license (https://github.com/SunderB/sunderb.github.io/bl
     {% include navbar.html %}
     
     <main id="main_content" class="post">
-        <header>
-            <h1 class="title">{{ page.title }}</h1>
-            <span class="date">
-                <img src="assets/img/icons/octicons/clock-24.svg" height="20"/>
-                <h4>{{ page.date | date: '%d %B %Y %H:%M' }}</h4>
-            </span>
-            {% if page.categories %}
-            {% capture a %}]{% endcapture %}
-            {% capture b %}[{% endcapture %}
-            {% assign badge_list = page.categories | remove: a | remove: b | split: ", " %}
-            {% for badge in badge_list %}
-            {% capture s %}{{ badge | size | minus: 2 }}{% endcapture s %}
-            <label class="badge">{{ badge | slice: 1, s }}</label>
-            {% endfor %}
-            {% endif %}
-        </header>
-        <hr style="margin-top: 8pt; margin-bottom: 8pt;">
-        <main>
+        <article class="post">
+            <header>
+                <h1 class="title">{{ page.title }}</h1>
+                <span class="date">
+                    <img src="assets/img/icons/octicons/clock-24.svg" height="20"/>
+                    <time>{{ page.date | date: '%d %B %Y %H:%M' }}</time>
+                </span>
+                {% if page.categories %}
+                {% capture a %}]{% endcapture %}
+                {% capture b %}[{% endcapture %}
+                {% assign badge_list = page.categories | remove: a | remove: b | split: ", " %}
+                {% for badge in badge_list %}
+                {% capture s %}{{ badge | size | minus: 2 }}{% endcapture s %}
+                <label class="badge">{{ badge | slice: 1, s }}</label>
+                {% endfor %}
+                {% endif %}
+            </header>
+            <hr style="margin-top: 8pt; margin-bottom: 8pt;">
             {{ content }}
-        </main>
+        </article>
     </main>
     
     {% include footer.html %}

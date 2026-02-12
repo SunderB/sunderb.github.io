@@ -11,14 +11,14 @@
     --content-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --footer-font:  "DM Mono", monospace;
 
-    --heading-margin: 4pt 1pt;
+    --heading-margin: 0.6em 0.1em 0.25em 0.05em;
     --header-padding: 6pt 0pt;
-    --content-margin: 2.5pt 1pt;
+    --content-margin: 0.25em 0.05em;
 
-    --content-font-size:    1.2rem;
-    --navbar-font-size:     1.1rem;
-    --small-font-size:      1rem;
-    --x-small-font-size:    0.9rem;
+    --content-font-size:    1rem;
+    --navbar-font-size:     0.95rem;
+    --small-font-size:      0.9rem;
+    --x-small-font-size:    0.85rem;
     
     --navbar-vertical-padding: 24px;
     --navbar-height: calc(var(--navbar-font-size) + 2*var(--navbar-vertical-padding) + 2px);
@@ -52,10 +52,17 @@
     margin: 0px;
     padding: 0px;
 }
-:not(pre, code, mjx-container, mjx-math, mjx-c, mjx-mo, mjx-mi, mjx-mrow, mjx-script, mjx-mn, mjx-msup, mjx-msub, mjx-mstyle, mjx-utext) {
+:not(
+    pre, code, mjx-container, mjx-math, mjx-c, mjx-mo, mjx-mi, mjx-mrow, mjx-script, mjx-mn, mjx-msup, mjx-msub,
+    mjx-mstyle, mjx-utext
+) {
     font-family: var(--content-font);
 }
 header,section,footer,aside,nav,article,hgroup { display: block; }
+
+html {
+    font-size:14pt;
+}
 
 /* Body */
 body {
@@ -75,12 +82,12 @@ h3,h4,h5,h6 {
     margin: var(--heading-margin);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.7rem;}
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.4rem; }
-h6 { font-size: 1.3rem; }
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem;}
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.15rem; }
+h6 { font-size: 1.1rem; }
 
 header:not(body > header) { padding: var(--header-padding); }
 
@@ -103,16 +110,40 @@ blockquote, pre {
     padding: 1rem;
     margin: 0.5rem 0;
     background: rgba(var(--colour-block-background));
+    border-radius: 0.25rem;
 }
+
 pre * {
     font-family: monospace !important;
     font-size: var(--small-font-size);
 }
 
+div[class^="language-"] pre {
+  margin-top: 0;
+  border-top-left-radius: 0;
+}
+div[class^="language-"]::before {
+  margin-top: 0;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  background: lightgrey;
+  content: "<>";
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+div.language-python::before        { content: "<> Python"; }
+div.language-c::before             { content: "<> C"; }
+div.language-cpp::before           { content: "<> C++"; }
+div.language-bash::before          { content: "<> Bash"; }
+div.language-javascript::before    { content: "<> JavaScript"; }
+div.language-html::before          { content: "<> HTML"; }
+div.language-css::before           { content: "<> CSS"; }
+div.language-gdscript::before      { content: "<> GDScript"; }
+
 /* Details */
 details {
     background: rgba(var(--colour-background), 0.5);
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
 }
 details hr {
@@ -221,22 +252,37 @@ details summary {
     /* Make the navbar full width */
     max-width: var(--content-max-width);
 }
+.navbar > a.nav_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: var(--navbar-height);
+    padding: 0 1rem;
+    align-content: center;
+}
 .navbar > a {
     padding: 8px;
     text-decoration: none;
 }
 .navbar .menu_button {
-    padding: 16px;
+    /* padding: 20px; */
+    height: var(--navbar-height);
+    width: var(--navbar-height);
     border-radius: 0;
     border: none;
+    padding: 0;
     background: none;
     display: none;
 }
+.navbar .menu_button img {
+    margin: auto;
+}
 .navbar .menu_button:hover {
     background-color: rgb(var(--colour-nav-hover));
+    transition: 0.25s;
 }
 .navbar .menu_button:hover img {
     filter: invert();
+    transition: 0.25s;
 }
 .navlinks {
     height: 100%;
@@ -271,6 +317,7 @@ details summary {
 .navlinks li a:hover {
     background-color: rgb(var(--colour-nav-hover));
     color: white;
+    transition: 0.25s;
 }
 /* Side menu */
 .sidenav {
@@ -284,19 +331,19 @@ details summary {
     background-color: rgb(var(--colour-main));
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 3rem;
     box-shadow: var(--nav-shadow);
 }
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 0.5rem;
+    font-size: 2rem;
+    margin-left: 4rem;
 }
 .sidenav .navlinks      { flex-direction: column; }
-.sidenav .navlinks li   { padding: 8px; }
-.sidenav .navlinks li a { padding: 8px; }
+.sidenav .navlinks li   { padding: 0.5rem; }
+.sidenav .navlinks li a { padding: 0.5rem; }
 
 /* Footer */
 #bottom_footer{
@@ -332,7 +379,7 @@ details summary {
     max-width: var(--content-max-width);
     margin: auto;
     text-align: center;
-    padding: 16pt 16px 0;
+    padding: 1rem 1rem 0;
     box-sizing: border-box;
 }
 .full_width_section > .section_content {
@@ -347,9 +394,9 @@ details summary {
 }
 .section_content > .column {
     flex: 1;
-    margin: 0px 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin: 0px 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .section_content > .column.no_vert_margin {
     /* flex: 1; */
@@ -366,7 +413,7 @@ details summary {
     font-weight: bold;
     list-style: disc;
     font-size: var(--content-font-size);
-    margin-left: 20px;
+    margin-left: 1.2rem;
 }
 
 .card_grid {
@@ -374,10 +421,10 @@ details summary {
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 0;
     min-width: 0;
-    row-gap: 16px;
+    row-gap: 1rem;
 }
 .card_grid > .card {
-    margin: 0px 16px;
+    margin: 0px 1rem;
     overflow: hidden;
     min-width: 0;
 }
@@ -391,24 +438,38 @@ details summary {
 }
 
 /* Post styles */
-.post           { max-width: var(--article-max-width); }
-.post img       { padding-right: 8px; }
-.post .title    { margin-bottom: 0; }
+.post           {
+    max-width: var(--article-max-width);
+    padding: 1rem 2rem;
+}
+.post img       { padding-right: 0.5rem; }
+.post .title    { margin-bottom: 0.1rem; }
+
 .post .date {
     text-align: left;
     flex: 1;
     color: rgb(var(--colour-text-dull));
     display: flex;
     align-items: center;
-    font-size: medium;
+    font-size: 1rem;
     margin-bottom: 0.8rem;
 }
+
+/* Add underline to h1 & h2 in posts */
+.post h1::after,
+.post h2::after {
+    content: "";
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid black;
+}
+.post .title::after { content: none; }
 
 /* Responsiveness for small screens */
 @media screen and (max-width: 800px) {
     /* Hide nav links in top bar, show menu icon */
     .navbar .navlinks { display: none; }
-    .navbar .menu_button { display: inline; }
+    .navbar .menu_button { display: flex; }
 
     /* Put columns on top of each other */
     .full_width_section .section_content {
